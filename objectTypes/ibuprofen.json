@@ -1,0 +1,57 @@
+{
+	"name": "Ibuprofen",
+	"plugin-id": "Sprite",
+	"sid": 704435319416550,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 537,
+						"height": 777,
+						"originX": 0.23928269960629667,
+						"originY": 0.7315215596087268,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7135345,
+						"collisionPoly": {
+							"points": [
+								0,
+								0.42301519783359975,
+								0.23928269960629667,
+								0,
+								0.4789842325362613,
+								0.9297135253551718,
+								0.4789842325362613,
+								0.7315215596087268,
+								0.4789842325362613,
+								0.5314598583363717,
+								0.23928269960629667,
+								1,
+								0,
+								1,
+								0,
+								0.7315215596087268
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 807411738390404,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

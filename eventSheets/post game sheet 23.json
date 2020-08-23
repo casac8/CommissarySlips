@@ -1,0 +1,269 @@
+{
+	"name": "Post game sheet 23",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 760725625702925
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 250862293982328,
+					"parameters": {
+						"audio-file": "DANICA2WAV",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 690801002411925
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 400361405913506
+				}
+			],
+			"actions": [
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 227898292545994,
+					"parameters": {
+						"tag": "\"BackgroundMusic\"",
+						"db": "-15",
+						"duration": "0.5",
+						"ending": "keep-playing"
+					}
+				}
+			],
+			"sid": 473354037836160
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "PG23Danicaaudiotext",
+					"sid": 476989343457564
+				}
+			],
+			"actions": [
+				{
+					"id": "typewriter-text",
+					"objectClass": "PG23Danicaaudiotext",
+					"sid": 512774363482821,
+					"parameters": {
+						"text": "\"It’s inhumane, it’s just really not okay. So that, you know, the food piece is obviously key, and especially right now during COVID we’ve been hearing from a lot of people that they’re, yeah, scared to eat food that was prepared outside of their own, you know, where they can see it being prepared.\"\n",
+						"duration": "16"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 371710567976999,
+					"parameters": {
+						"seconds": "16"
+					}
+				},
+				{
+					"id": "typewriter-text",
+					"objectClass": "DanicaText2",
+					"sid": 729272508311266,
+					"parameters": {
+						"text": "\"And then, they don’t know how many hands it’s being passed through to get to them. And so, even more so than usual, people are relying on being able to buy stuff from commissary.\"",
+						"duration": "12"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 600531851360165,
+					"parameters": {
+						"seconds": "14"
+					}
+				},
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 194674415056695,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 328380944508457
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "GoAhead",
+					"sid": 121718259542297
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 958365398448767,
+					"parameters": {
+						"which": "next"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 855624140687610,
+					"parameters": {
+						"tag": "\"\""
+					}
+				}
+			],
+			"sid": 381551276081602
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 394219229832886,
+					"parameters": {
+						"object": "GoAhead"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 429874641278125,
+					"parameters": {
+						"which": "next"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 515087106430070,
+					"parameters": {
+						"tag": "\"\""
+					}
+				}
+			],
+			"sid": 526106663596297
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Back",
+					"sid": 564546779638625
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 683284884582227,
+					"parameters": {
+						"which": "previous"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 919866551093213,
+					"parameters": {
+						"tag": "\"\""
+					}
+				}
+			],
+			"sid": 617375784493565
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 197169742784122,
+					"parameters": {
+						"object": "Back"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 738301503404200,
+					"parameters": {
+						"which": "previous"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 685052882520049,
+					"parameters": {
+						"tag": "\"\""
+					}
+				}
+			],
+			"sid": 393745306231499
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 647993068854042
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 376121055654377,
+					"parameters": {
+						"variable": "SlidevalueDD",
+						"value": "31"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "SlideCounterDD",
+					"sid": 976563425515048,
+					"parameters": {
+						"text": "(str(SlideValueDD))"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "SlidecounterOD",
+					"sid": 105973242709162,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 767530960436337
+		}
+	],
+	"sid": 470819967557739
+}

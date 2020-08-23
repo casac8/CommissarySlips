@@ -1,0 +1,229 @@
+{
+	"name": "Post game sheet 4",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "SlidevalueDD",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 367438059279959
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 400180563419717
+				}
+			],
+			"actions": [
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 149732332892508,
+					"parameters": {
+						"tag": "\"BackgroundMusic\"",
+						"db": "0",
+						"duration": "3",
+						"ending": "keep-playing"
+					}
+				},
+				{
+					"id": "set-master-volume",
+					"objectClass": "Audio",
+					"sid": 541110401930893,
+					"parameters": {
+						"db": "0"
+					}
+				}
+			],
+			"sid": 831007591117754
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 678861938408097
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "PG4Text1",
+					"sid": 678646975090895,
+					"parameters": {
+						"text": "\"In Alabama, state prisoners aren’t paid for the vast majority of work they do, from scrubbing toilets and cooking food to cutting grass and mopping floors.\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 634442736170903,
+					"parameters": {
+						"seconds": "5"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "PG4Text2",
+					"sid": 172545032030396,
+					"parameters": {
+						"text": "\"An internal Department of Corrections document obtained by Reckon revealed that no standard jobs in multiple Alabama prisons (including Limestone) paid a single cent as of June.\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 594456276553697,
+					"parameters": {
+						"seconds": "7"
+					}
+				},
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 154030207875311,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 805352798278395
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "GoAhead",
+					"sid": 813040735162505
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 487849209953696,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 352427710986321
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 455323444204653,
+					"parameters": {
+						"object": "GoAhead"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 768098257973132,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 101874981063344
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Back",
+					"sid": 510269073864198
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 907113619418223,
+					"parameters": {
+						"which": "previous"
+					}
+				}
+			],
+			"sid": 433793315582660
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 634204699336553,
+					"parameters": {
+						"object": "Back"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 957630447290598,
+					"parameters": {
+						"which": "previous"
+					}
+				}
+			],
+			"sid": 657312703308286
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 612034516312752
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 951247587339594,
+					"parameters": {
+						"variable": "SlidevalueDD",
+						"value": "10"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "SlideCounterDD",
+					"sid": 788467742470764,
+					"parameters": {
+						"text": "(str(SlideValueDD))"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "SlidecounterOD",
+					"sid": 126303719960793,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 158847057010703
+		}
+	],
+	"sid": 630280694598574
+}

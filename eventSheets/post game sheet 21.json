@@ -1,0 +1,252 @@
+{
+	"name": "Post game sheet 21",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 588201784025601
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 280043783075536,
+					"parameters": {
+						"audio-file": "CARROLLCLIPLAST2WAV",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 411226621631183
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 862280097139222
+				}
+			],
+			"actions": [
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 545843054868193,
+					"parameters": {
+						"tag": "\"BackgroundMusic\"",
+						"db": "-15",
+						"duration": "0.5",
+						"ending": "keep-playing"
+					}
+				}
+			],
+			"sid": 591515885849755
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "PG21AudioText2",
+					"sid": 659959031846721
+				}
+			],
+			"actions": [
+				{
+					"id": "typewriter-text",
+					"objectClass": "PG21AudioText2",
+					"sid": 703857081696743,
+					"parameters": {
+						"text": "\"Gang membership, prostitution, being a courier within the system - there’s all sorts of things people do in order to get money for commissary.\"",
+						"duration": "11.5"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 166866808737070,
+					"parameters": {
+						"seconds": "14"
+					}
+				},
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 867082543519794,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 236690345023728
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "GoAhead",
+					"sid": 941817628172458
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 520876197445707,
+					"parameters": {
+						"which": "next"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 632070426911400,
+					"parameters": {
+						"tag": "\"\""
+					}
+				}
+			],
+			"sid": 208168133081711
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 440625522486442,
+					"parameters": {
+						"object": "GoAhead"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 826086733930344,
+					"parameters": {
+						"which": "next"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 959675804016745,
+					"parameters": {
+						"tag": "\"\""
+					}
+				}
+			],
+			"sid": 444222425895940
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Back",
+					"sid": 808930224789147
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 660699847464147,
+					"parameters": {
+						"which": "previous"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 922335056827796,
+					"parameters": {
+						"tag": "\"\""
+					}
+				}
+			],
+			"sid": 470561988312184
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 353054414266332,
+					"parameters": {
+						"object": "Back"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 525987169104242,
+					"parameters": {
+						"which": "previous"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 748291041296591,
+					"parameters": {
+						"tag": "\"\""
+					}
+				}
+			],
+			"sid": 913555884125346
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 519323769000564
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 247305403391428,
+					"parameters": {
+						"variable": "SlidevalueDD",
+						"value": "29"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "SlideCounterDD",
+					"sid": 643947119782005,
+					"parameters": {
+						"text": "(str(SlideValueDD))"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "SlidecounterOD",
+					"sid": 537329047718202,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 488135891536090
+		}
+	],
+	"sid": 855478765920658
+}

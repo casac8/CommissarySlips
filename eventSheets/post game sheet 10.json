@@ -1,0 +1,323 @@
+{
+	"name": "Post game sheet 10",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 458698057027156
+				}
+			],
+			"actions": [
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 990942489719836,
+					"parameters": {
+						"tag": "\"BackgroundMusic\"",
+						"db": "-20",
+						"duration": "0.5",
+						"ending": "keep-playing"
+					}
+				}
+			],
+			"sid": 982199598531515
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 724523007170808
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 200697738976431,
+					"parameters": {
+						"audio-file": "Amber audio1WAV",
+						"loop": "not-looping",
+						"volume": "5",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 742060588993232
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "AmberText1",
+					"sid": 690468456159881
+				}
+			],
+			"actions": [
+				{
+					"id": "typewriter-text",
+					"objectClass": "AmberText1",
+					"sid": 723238905770652,
+					"parameters": {
+						"text": "\"Yeah, if you don’t have enough money, I mean, you basically, like, either starve because you’re not getting portioned your food out enough, or you’re gonna go stinking because you can’t buy deodorant or, you know, get body soap or whatever to bathe with...\"",
+						"duration": "17"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 633097155096091,
+					"parameters": {
+						"seconds": "18"
+					}
+				},
+				{
+					"id": "typewriter-text",
+					"objectClass": "AmberTextsecond",
+					"sid": 735414218794255,
+					"parameters": {
+						"text": "\"I send Justin probably anywhere between, like, $200 and $400 a month just so he can, you know, get the things that he needs because, like, the things that are provided, they don’t last long and they run out.\"",
+						"duration": "16"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 592518194422541,
+					"parameters": {
+						"seconds": "18"
+					}
+				},
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 780299875696094,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 527799109050175
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "GoAhead",
+					"sid": 342060171435829
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 804669377484830,
+					"parameters": {
+						"which": "next"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 501846227808293,
+					"parameters": {
+						"tag": "\"\""
+					}
+				}
+			],
+			"sid": 334852530003385
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 646387205477702,
+					"parameters": {
+						"object": "GoAhead"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 841462901638874,
+					"parameters": {
+						"which": "next"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 814692458194119,
+					"parameters": {
+						"tag": "\"\""
+					}
+				}
+			],
+			"sid": 992338292407592
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Back",
+					"sid": 608172086843442
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 749394383445183,
+					"parameters": {
+						"which": "previous"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 902825534476940,
+					"parameters": {
+						"tag": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 147047248394851,
+					"parameters": {
+						"seconds": "0.0"
+					}
+				},
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 291195832494656,
+					"parameters": {
+						"tag": "\"BackgroundMusic\"",
+						"db": "0",
+						"duration": "3",
+						"ending": "keep-playing"
+					}
+				},
+				{
+					"id": "set-master-volume",
+					"objectClass": "Audio",
+					"sid": 236376986741684,
+					"parameters": {
+						"db": "0"
+					}
+				}
+			],
+			"sid": 625636872356089
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 411955559553645,
+					"parameters": {
+						"object": "Back"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 364202131317292,
+					"parameters": {
+						"which": "previous"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 335527038972886,
+					"parameters": {
+						"tag": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 486330205507381,
+					"parameters": {
+						"seconds": "0.0"
+					}
+				},
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 464381318793461,
+					"parameters": {
+						"tag": "\"BackgroundMusic\"",
+						"db": "0",
+						"duration": "3",
+						"ending": "keep-playing"
+					}
+				},
+				{
+					"id": "set-master-volume",
+					"objectClass": "Audio",
+					"sid": 328159287634548,
+					"parameters": {
+						"db": "0"
+					}
+				}
+			],
+			"sid": 178091936308630
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 885070605338639
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 365022113337922,
+					"parameters": {
+						"variable": "SlidevalueDD",
+						"value": "17"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "SlideCounterDD",
+					"sid": 934934043126835,
+					"parameters": {
+						"text": "(str(SlideValueDD))"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "SlidecounterOD",
+					"sid": 182232936931146,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 601965260906998
+		}
+	],
+	"sid": 556476605434034
+}

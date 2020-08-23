@@ -1,0 +1,187 @@
+{
+	"name": "Post game sheet 6",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 973529008769016
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "PG6Text1",
+					"sid": 343103480333318,
+					"parameters": {
+						"text": "\"In minimum-security facilities, many inmates are paid for their participation in work release or work center programs.\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 321921655397526,
+					"parameters": {
+						"seconds": "7"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "PG6Text2",
+					"sid": 476759308915461,
+					"parameters": {
+						"text": "\"But in Alabama's higher-security prisons, you and thousands of other inmates are not paid for your labor.\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 115651235114527,
+					"parameters": {
+						"seconds": "8"
+					}
+				},
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 830362044719564,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 396168827980573
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "GoAhead",
+					"sid": 938743952890675
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 540178445119105,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 955522740791526
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 947985988125415,
+					"parameters": {
+						"object": "GoAhead"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 562733317904137,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 491836411476975
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Back",
+					"sid": 602357220657992
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 764383366381688,
+					"parameters": {
+						"which": "previous"
+					}
+				}
+			],
+			"sid": 269091250510596
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 206413522227373,
+					"parameters": {
+						"object": "Back"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 549185267015428,
+					"parameters": {
+						"which": "previous"
+					}
+				}
+			],
+			"sid": 667510721677926
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 976760514654089
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 998403104979999,
+					"parameters": {
+						"variable": "SlidevalueDD",
+						"value": "13"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "SlideCounterDD",
+					"sid": 541231424622022,
+					"parameters": {
+						"text": "(str(SlideValueDD))"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "SlidecounterOD",
+					"sid": 988318117770953,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 277519263949415
+		}
+	],
+	"sid": 687494031584210
+}

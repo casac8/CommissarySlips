@@ -1,0 +1,323 @@
+{
+	"name": "Post game sheet 15",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 276357303666005
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 181005292447734,
+					"parameters": {
+						"audio-file": "CarrollAudio5WAV",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 175309551829871
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 585572939092247
+				}
+			],
+			"actions": [
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 634377593984067,
+					"parameters": {
+						"tag": "\"BackgroundMusic\"",
+						"db": "-15",
+						"duration": "0.5",
+						"ending": "keep-playing"
+					}
+				}
+			],
+			"sid": 786055622694890
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "CarrollText3",
+					"sid": 508757400498655
+				}
+			],
+			"actions": [
+				{
+					"id": "typewriter-text",
+					"objectClass": "CarrollText3",
+					"sid": 170589104845810,
+					"parameters": {
+						"text": "\"That is an insane amount of money for these systems to be making. I mean, everybody knows that the commissary's a racket.\"\n",
+						"duration": "6"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 769063046997654,
+					"parameters": {
+						"seconds": "6"
+					}
+				},
+				{
+					"id": "typewriter-text",
+					"objectClass": "CarrollText3a",
+					"sid": 136519623984464,
+					"parameters": {
+						"text": "\"I mean, just looking at the pricing on the items, it is above and beyond whatever the cost is to bring those items into the facilities, so you know that it has a profit motive.\"",
+						"duration": "14"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 501742049784883,
+					"parameters": {
+						"seconds": "16"
+					}
+				},
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 914511139612238,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 532201239049355
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "GoAhead",
+					"sid": 104760922920777
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 362491326619222,
+					"parameters": {
+						"which": "next"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 295021902028703,
+					"parameters": {
+						"tag": "\"\""
+					}
+				}
+			],
+			"sid": 921986981593914
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 733432121077105,
+					"parameters": {
+						"object": "GoAhead"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 282998214177101,
+					"parameters": {
+						"which": "next"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 465112902208620,
+					"parameters": {
+						"tag": "\"\""
+					}
+				}
+			],
+			"sid": 115112273636363
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Back",
+					"sid": 454599049117339
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 666675795722582,
+					"parameters": {
+						"which": "previous"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 485920877989208,
+					"parameters": {
+						"tag": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 550580062878930,
+					"parameters": {
+						"seconds": "0.0"
+					}
+				},
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 340892842991162,
+					"parameters": {
+						"tag": "\"BackgroundMusic\"",
+						"db": "0",
+						"duration": "3",
+						"ending": "keep-playing"
+					}
+				},
+				{
+					"id": "set-master-volume",
+					"objectClass": "Audio",
+					"sid": 227746798851929,
+					"parameters": {
+						"db": "0"
+					}
+				}
+			],
+			"sid": 223803039948772
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 812143381051744,
+					"parameters": {
+						"object": "Back"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 392147497099394,
+					"parameters": {
+						"which": "previous"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 525156557742495,
+					"parameters": {
+						"tag": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 446250787499652,
+					"parameters": {
+						"seconds": "0.0"
+					}
+				},
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 107628014287639,
+					"parameters": {
+						"tag": "\"BackgroundMusic\"",
+						"db": "0",
+						"duration": "3",
+						"ending": "keep-playing"
+					}
+				},
+				{
+					"id": "set-master-volume",
+					"objectClass": "Audio",
+					"sid": 218020910051248,
+					"parameters": {
+						"db": "0"
+					}
+				}
+			],
+			"sid": 146155285643998
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 304828912156134
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 997754449548913,
+					"parameters": {
+						"variable": "SlidevalueDD",
+						"value": "22"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "SlideCounterDD",
+					"sid": 105309100533655,
+					"parameters": {
+						"text": "(str(SlideValueDD))"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "SlidecounterOD",
+					"sid": 686085672420109,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 673247006585325
+		}
+	],
+	"sid": 302943473196624
+}

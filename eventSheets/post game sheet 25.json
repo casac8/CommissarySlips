@@ -1,0 +1,252 @@
+{
+	"name": "Post game sheet 25",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 896808595277190
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 148416221741298,
+					"parameters": {
+						"audio-file": "FOSTERFINALIZEDWAV",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 404337811361843
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 734617514685068
+				}
+			],
+			"actions": [
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 832578188796333,
+					"parameters": {
+						"tag": "\"BackgroundMusic\"",
+						"db": "-15",
+						"duration": "0.5",
+						"ending": "keep-playing"
+					}
+				}
+			],
+			"sid": 797742963868650
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "PG25FosterFinalText",
+					"sid": 324919277412242
+				}
+			],
+			"actions": [
+				{
+					"id": "typewriter-text",
+					"objectClass": "PG25FosterFinalText",
+					"sid": 646274252251837,
+					"parameters": {
+						"text": "\"Commissaries today exist because prisons do not provide people who are in them with what they need to actually live decently.\"\n",
+						"duration": "13"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 353186881739793,
+					"parameters": {
+						"seconds": "17"
+					}
+				},
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 141651735759914,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 243657101863819
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "GoAhead",
+					"sid": 193987802872848
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 404457849932199,
+					"parameters": {
+						"which": "next"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 482540897443489,
+					"parameters": {
+						"tag": "\"\""
+					}
+				}
+			],
+			"sid": 609911873443742
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 794894051945687,
+					"parameters": {
+						"object": "GoAhead"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 875071851452360,
+					"parameters": {
+						"which": "next"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 623512324057792,
+					"parameters": {
+						"tag": "\"\""
+					}
+				}
+			],
+			"sid": 209352935679844
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Back",
+					"sid": 300011816125651
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 167586474553751,
+					"parameters": {
+						"which": "previous"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 488696199646236,
+					"parameters": {
+						"tag": "\"\""
+					}
+				}
+			],
+			"sid": 571497674899409
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 495117400145171,
+					"parameters": {
+						"object": "Back"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 970722632433384,
+					"parameters": {
+						"which": "previous"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 387535765862042,
+					"parameters": {
+						"tag": "\"\""
+					}
+				}
+			],
+			"sid": 141481396455391
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 440538970793370
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 211064512897331,
+					"parameters": {
+						"variable": "SlidevalueDD",
+						"value": "33"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "SlideCounterDD",
+					"sid": 519484568286641,
+					"parameters": {
+						"text": "(str(SlideValueDD))"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "SlidecounterOD",
+					"sid": 512661319065654,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 258224149457537
+		}
+	],
+	"sid": 620539389752098
+}

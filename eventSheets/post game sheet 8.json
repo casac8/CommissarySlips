@@ -1,0 +1,219 @@
+{
+	"name": "Post game sheet 8",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 156454043374247
+				}
+			],
+			"actions": [
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 336256323590570,
+					"parameters": {
+						"tag": "\"BackgroundMusic\"",
+						"db": "0",
+						"duration": "3",
+						"ending": "keep-playing"
+					}
+				},
+				{
+					"id": "set-master-volume",
+					"objectClass": "Audio",
+					"sid": 635760542469030,
+					"parameters": {
+						"db": "0"
+					}
+				}
+			],
+			"sid": 212081169133512
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 965712339951809
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "PG8Text1",
+					"sid": 634688734776221,
+					"parameters": {
+						"text": "\"And yet, the only way to purchase essential items from the commissary is to have money.\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 582670738881261,
+					"parameters": {
+						"seconds": "4"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "PG8Text2",
+					"sid": 251896205636713,
+					"parameters": {
+						"text": "\"Like many inmates, you rely on family members on the outside - in your case, your wife, Amber - to make deposits into your commissary account, commonly referred to as “putting money on your books” or “giving you store.”\"\n"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 837414067316900,
+					"parameters": {
+						"seconds": "10"
+					}
+				},
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 601740901591619,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 580252994986478
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "GoAhead",
+					"sid": 697226941658039
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 435940248237098,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 339712638612708
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 933093721484492,
+					"parameters": {
+						"object": "GoAhead"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 648834593864993,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 671428507985077
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Back",
+					"sid": 874417255998476
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 985941700367350,
+					"parameters": {
+						"which": "previous"
+					}
+				}
+			],
+			"sid": 597504515439178
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 108075391478741,
+					"parameters": {
+						"object": "Back"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 277941467139413,
+					"parameters": {
+						"which": "previous"
+					}
+				}
+			],
+			"sid": 428857133168158
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 329723767070933
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 621311089862644,
+					"parameters": {
+						"variable": "SlidevalueDD",
+						"value": "15"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "SlideCounterDD",
+					"sid": 732001261903654,
+					"parameters": {
+						"text": "(str(SlideValueDD))"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "SlidecounterOD",
+					"sid": 689223666103683,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 945235217089590
+		}
+	],
+	"sid": 280858401795966
+}

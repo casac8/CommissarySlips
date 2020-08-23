@@ -1,0 +1,235 @@
+{
+	"name": "Post game sheet 18",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 294360655854247
+				}
+			],
+			"actions": [
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 314619367019568,
+					"parameters": {
+						"tag": "\"BackgroundMusic\"",
+						"db": "0",
+						"duration": "3",
+						"ending": "keep-playing"
+					}
+				},
+				{
+					"id": "set-master-volume",
+					"objectClass": "Audio",
+					"sid": 193857131281380,
+					"parameters": {
+						"db": "0"
+					}
+				}
+			],
+			"sid": 105151401149260
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 224506618101249
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "PG18Text1",
+					"sid": 145048716688160,
+					"parameters": {
+						"text": "\"Some prisoners have it even worse than you do.\"\n"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 651518194195345,
+					"parameters": {
+						"seconds": "2.5"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "PG18Text2",
+					"sid": 623883247455731,
+					"parameters": {
+						"text": "\"Inmates who don’t have someone to put money on their books face a difficult quandary: go without needed items, or find a way to make money.\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 652552806676609,
+					"parameters": {
+						"seconds": "7"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "PG18Text3",
+					"sid": 541426206437016,
+					"parameters": {
+						"text": "\"You’ve found that many turn to drugs, prostitution and other illicit activities to earn money to spend at the commissary.\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 874289658178875,
+					"parameters": {
+						"seconds": "8"
+					}
+				},
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 700002798896412,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 551040810960739
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "GoAhead",
+					"sid": 673299826678666
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 493466872283566,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 236455834386092
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 215514139491590,
+					"parameters": {
+						"object": "GoAhead"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 727343105642395,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 936826104229948
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Back",
+					"sid": 524754184938080
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 705958056717991,
+					"parameters": {
+						"which": "previous"
+					}
+				}
+			],
+			"sid": 710034399117281
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 233706734667434,
+					"parameters": {
+						"object": "Back"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 126878773930602,
+					"parameters": {
+						"which": "previous"
+					}
+				}
+			],
+			"sid": 150706216593243
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 993574106567746
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 842052271053369,
+					"parameters": {
+						"variable": "SlidevalueDD",
+						"value": "26"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "SlideCounterDD",
+					"sid": 139088541054584,
+					"parameters": {
+						"text": "(str(SlideValueDD))"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "SlidecounterOD",
+					"sid": 158005393747578,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 631387882917823
+		}
+	],
+	"sid": 326915320830510
+}

@@ -1,0 +1,57 @@
+{
+	"name": "Rodarmelheadshot",
+	"plugin-id": "Sprite",
+	"sid": 630211773850525,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 670,
+						"height": 658,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9538681,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.5,
+								0,
+								0.9985074626865672,
+								0,
+								0.9985074626865672,
+								0.5,
+								0.9985074626865672,
+								0.9984802431610942,
+								0.5,
+								0.9984802431610942,
+								0,
+								0.9984802431610942,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 157675564937255,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

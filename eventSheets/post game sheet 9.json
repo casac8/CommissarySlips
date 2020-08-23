@@ -1,0 +1,171 @@
+{
+	"name": "Post game sheet 9",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 533790429886747
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "PG9Text1",
+					"sid": 479456440404650,
+					"parameters": {
+						"text": "\"When money is good, Amber tries to put at least $100 on your books each week so you can stay clean, enjoy some basic comforts and fill your stomach when you aren't served enough food in the prison kitchen.\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 535353497105221,
+					"parameters": {
+						"seconds": "8"
+					}
+				},
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 844542202437726,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 364615356308151
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "GoAhead",
+					"sid": 969644598660582
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 427170955844906,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 683528262498406
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 830622967274977,
+					"parameters": {
+						"object": "GoAhead"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 897845124576165,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 902738579234003
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Back",
+					"sid": 691626767231411
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 135274421846828,
+					"parameters": {
+						"which": "previous"
+					}
+				}
+			],
+			"sid": 370692524885610
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 945106346411582,
+					"parameters": {
+						"object": "Back"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 231387846310707,
+					"parameters": {
+						"which": "previous"
+					}
+				}
+			],
+			"sid": 246109805858686
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 265732342696259
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 848772342403279,
+					"parameters": {
+						"variable": "SlidevalueDD",
+						"value": "16"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "SlideCounterDD",
+					"sid": 631186491597654,
+					"parameters": {
+						"text": "(str(SlideValueDD))"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "SlidecounterOD",
+					"sid": 213159693536734,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 632533217134383
+		}
+	],
+	"sid": 216603654592837
+}

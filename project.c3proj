@@ -1,0 +1,661 @@
+{
+	"projectFormatVersion": 1,
+	"savedWithRelease": 21002,
+	"name": "Commissary Slips",
+	"runtime": "c3",
+	"useWorker": "worker",
+	"bundleAddons": false,
+	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "TiledBg",
+			"name": "Tiled Background",
+			"author": "Scirra",
+			"version": "r210.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"version": "r210.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Button",
+			"name": "Button",
+			"author": "Scirra",
+			"version": "r210.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
+			"author": "Scirra",
+			"version": "r210.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Mouse",
+			"name": "Mouse",
+			"author": "Scirra",
+			"version": "r210.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Touch",
+			"name": "Touch",
+			"author": "Scirra",
+			"version": "r210.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"version": "r210.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Spritefont2",
+			"name": "Sprite font",
+			"author": "Scirra",
+			"version": "r210.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "iframe",
+			"name": "iframe",
+			"author": "Scirra",
+			"version": "r210.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "TextBox",
+			"name": "Text input",
+			"author": "Scirra",
+			"version": "r210.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Tween",
+			"name": "Tween",
+			"author": "Scirra",
+			"version": "r210.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Fade",
+			"name": "Fade",
+			"author": "Scirra",
+			"version": "r210.2",
+			"bundled": false
+		}
+	],
+	"uniqueId": "9vlivaql2p3",
+	"objectTypes": {
+		"items": [
+			"TiledBackground",
+			"Toothbrush",
+			"Toothpaste",
+			"ChewingTobacco",
+			"ProteinBar",
+			"HoneyBun",
+			"Vaseline",
+			"Faygo",
+			"Ibuprofen",
+			"Cigarettes",
+			"ChipsDone",
+			"Phone",
+			"ReplayButton",
+			"Sprite",
+			"MoneyText",
+			"Sprite3",
+			"Mouse",
+			"Touch",
+			"Audio",
+			"SpriteFont",
+			"Sprite4",
+			"TiledBackground2",
+			"TiledBackground3",
+			"Text1",
+			"Text1a",
+			"Text1b",
+			"Sprite2",
+			"Fixodent",
+			"Text2",
+			"Text2a",
+			"Sprite5",
+			"Text3",
+			"Text3a",
+			"Text4",
+			"Text4a",
+			"Text",
+			"Text5",
+			"Text5a",
+			"Text5b",
+			"Text6",
+			"Text6a",
+			"Text6b",
+			"Shorts",
+			"iframe",
+			"iframe2",
+			"Cereal",
+			"Advil",
+			"Nextlayout",
+			"Carroll",
+			"Carroltext1",
+			"CarrollText2",
+			"Text7",
+			"Speaker",
+			"PG4Text1",
+			"PG4Text2",
+			"Sprite6",
+			"PG6Text1",
+			"PG6Text2",
+			"PG8Text1",
+			"PG8Text2",
+			"PG9Text1",
+			"Text8",
+			"PG13Text1",
+			"PG13Text2",
+			"PG14Textdots",
+			"Justinjobstext",
+			"Text9",
+			"Sprite7",
+			"Securustext",
+			"Redactcaption",
+			"AmberText1",
+			"Amberheadshot",
+			"AmberBio",
+			"LisaFosterText1",
+			"Fosterheadshot",
+			"Text10",
+			"Fosterbio",
+			"CarrollText3",
+			"Text11",
+			"PG16Text1",
+			"JustinText17",
+			"JustinText17a",
+			"PG18Text1",
+			"PG18Text2",
+			"PG19JustinAudioText",
+			"PG20Text",
+			"Text12",
+			"PG21AudioText",
+			"PG21AudioText2",
+			"PG22text",
+			"PG23Danicaaudiotext",
+			"Rodarmelheadshot",
+			"danicabio",
+			"PG24text1",
+			"PG24Text2",
+			"Text13",
+			"PG25FosterFinalText",
+			"End",
+			"ENDTextBox",
+			"copyright",
+			"Button",
+			"PlayAgain",
+			"Touchtostart",
+			"Text14",
+			"soundon",
+			"Text15",
+			"DanicaText2",
+			"Text16",
+			"PG2Text",
+			"PG18Text3",
+			"PG10Text2",
+			"AmberTextsecond",
+			"Button2",
+			"Button3",
+			"GoAhead",
+			"Spritebuttoncontinue",
+			"SpriteButtonPlayagain",
+			"Back",
+			"Backsprite",
+			"Forwardspritebutton",
+			"StartGameOver",
+			"PG16Text2",
+			"Reckon",
+			"TiledBackground4",
+			"For",
+			"SlidecounterOD",
+			"Text17",
+			"Slidenumber",
+			"Text18",
+			"SlideCounterDD",
+			"Profitgraph",
+			"PostGame45Text",
+			"PGText175one",
+			"Text19",
+			"Text20",
+			"PGText175two",
+			"PostGame55Text2",
+			"CarrollText3a"
+		],
+		"subfolders": []
+	},
+	"autosaveData": null,
+	"containers": [],
+	"families": {
+		"items": [
+			"Family1"
+		],
+		"subfolders": []
+	},
+	"layouts": {
+		"items": [
+			"Layout 0",
+			"Layout 1",
+			"Layout 2",
+			"Layout 3",
+			"Layout 4",
+			"Layout 5",
+			"Layout STORE",
+			"Post game layout 1",
+			"Post game layout 2",
+			"Post game layout 3",
+			"Post game layout 4",
+			"Post game layout 5",
+			"Post game layout 5.5",
+			"Post game layout 6",
+			"Post game layout 7",
+			"Post game layout 8",
+			"Post game layout 9",
+			"Post game layout 10",
+			"Post game layout 11",
+			"Post game layout 12",
+			"Post game layout 13",
+			"Post game layout 14",
+			"Post game layout 15",
+			"Post game layout 16",
+			"Post game layout 17",
+			"Post game layout 17.5",
+			"Post game layout 18",
+			"Post game layout 19",
+			"Post game layout 20",
+			"Post game layout 21",
+			"Post game layout 22",
+			"Post game layout 23",
+			"Post game layout 24",
+			"Post game layout 25",
+			"END"
+		],
+		"subfolders": []
+	},
+	"eventSheets": {
+		"items": [
+			"Event sheet STORE",
+			"Event sheet 1",
+			"Event sheet 2",
+			"Event sheet 3",
+			"Event sheet 4",
+			"Event sheet 5",
+			"Post game sheet 1",
+			"Post game sheet 3",
+			"Post game sheet 4",
+			"Post game sheet 5",
+			"Post game sheet 6",
+			"Post game sheet 7",
+			"Post game sheet 8",
+			"Post game sheet 9",
+			"Post game sheet 10",
+			"Post game sheet 12",
+			"Post game sheet 11",
+			"Post game sheet 13",
+			"Post game sheet 14",
+			"Post game sheet 15",
+			"Post game sheet 16",
+			"Post game sheet 17",
+			"Post game sheet 18",
+			"Post game sheet 19",
+			"Post game sheet 20",
+			"Post game sheet 21",
+			"Post game sheet 22",
+			"Post game sheet 23",
+			"Post game sheet 24",
+			"Post game sheet 25",
+			"End Sheet",
+			"Post game sheet 2",
+			"Event sheet 0",
+			"Post game sheet 5.5",
+			"Post game sheet 17.5"
+		],
+		"subfolders": []
+	},
+	"rootFileFolders": {
+		"script": {
+			"items": [
+				{
+					"name": "Script.js",
+					"type": "application/javascript",
+					"sid": 715825432419535
+				}
+			],
+			"subfolders": []
+		},
+		"sound": {
+			"items": [
+				{
+					"name": "doorslam.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 912972736632266
+				},
+				{
+					"name": "doorbell.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 675727687092605
+				},
+				{
+					"name": "Register.mp3",
+					"type": "audio/mpeg",
+					"sid": 969315015675974
+				},
+				{
+					"name": "CarrollAudio1.mp3",
+					"type": "audio/mpeg",
+					"sid": 521108667796874
+				},
+				{
+					"name": "Justin jobs audio.mp3",
+					"type": "audio/mpeg",
+					"sid": 271764200219909
+				},
+				{
+					"name": "Amber audio1.mp3",
+					"type": "audio/mpeg",
+					"sid": 363149447151419
+				},
+				{
+					"name": "JUSTINAUDIOCLIP4.mp3",
+					"type": "audio/mpeg",
+					"sid": 248671539151746
+				},
+				{
+					"name": "RODARMEL.mp3",
+					"type": "audio/mpeg",
+					"sid": 394814637653966
+				},
+				{
+					"name": "JUSTINAUDIOCOMP.mp3",
+					"type": "audio/mpeg",
+					"sid": 591827194126859
+				},
+				{
+					"name": "JUSTINAUDIOHUSTLING.mp3",
+					"type": "audio/mpeg",
+					"sid": 291249576580194
+				},
+				{
+					"name": "Error sound.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 578445391119344
+				},
+				{
+					"name": "CARROLLCLIPLAST2.mp3",
+					"type": "audio/mpeg",
+					"sid": 306037528526760
+				},
+				{
+					"name": "FosterAudio3.mp3",
+					"type": "audio/mpeg",
+					"sid": 891462927076084
+				},
+				{
+					"name": "CarrollAudio5.mp3",
+					"type": "audio/mpeg",
+					"sid": 478195885858966
+				},
+				{
+					"name": "JUSTINAUDIOCOMP2.mp3",
+					"type": "audio/mpeg",
+					"sid": 194577770028093
+				},
+				{
+					"name": "JustinHungryAudio.mp3",
+					"type": "audio/mpeg",
+					"sid": 805685537944417
+				},
+				{
+					"name": "DANICA2.mp3",
+					"type": "audio/mpeg",
+					"sid": 837704330750380
+				},
+				{
+					"name": "FOSTERFINALIZED.mp3",
+					"type": "audio/mpeg",
+					"sid": 855286034853857
+				},
+				{
+					"name": "RODARMELWAV.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 877036977498251
+				},
+				{
+					"name": "RegisterWAV.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 797833075614667
+				},
+				{
+					"name": "JustinHungryAudioWAV.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 350524354505157
+				},
+				{
+					"name": "JUSTINAUDIOHUSTLINGWAV.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 828484980956750
+				},
+				{
+					"name": "JUSTINAUDIOCOMPWAV.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 623433024251612
+				},
+				{
+					"name": "JUSTINAUDIOCOMP2WAV.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 108682405260848
+				},
+				{
+					"name": "JUSTINAUDIOCLIP4WAV.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 259245117990683
+				},
+				{
+					"name": "Justin jobs audioWAV.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 483051029822498
+				},
+				{
+					"name": "FOSTERFINALIZEDWAV.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 749464018890473
+				},
+				{
+					"name": "FosterAudio3WAV.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 481647859390533
+				},
+				{
+					"name": "DANICA2WAV.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 860919415824629
+				},
+				{
+					"name": "CARROLLCLIPLAST2WAV.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 103114518592691
+				},
+				{
+					"name": "CarrollAudio5WAV.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 741084162772510
+				},
+				{
+					"name": "CarrollAudio1WAV.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 710823459962628
+				},
+				{
+					"name": "Amber audio1WAV.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 688538376726450
+				}
+			],
+			"subfolders": []
+		},
+		"music": {
+			"items": [
+				{
+					"name": "Commissary Slips Background MusicWAV.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 472779775586908
+				}
+			],
+			"subfolders": []
+		},
+		"video": {
+			"items": [],
+			"subfolders": []
+		},
+		"font": {
+			"items": [],
+			"subfolders": []
+		},
+		"icon": {
+			"items": [
+				{
+					"name": "loading-logo.png",
+					"type": "image/png",
+					"sid": 147219450446591,
+					"icon-info": {
+						"purpose": "loading-logo"
+					}
+				},
+				{
+					"name": "icon-16.png",
+					"type": "image/png",
+					"sid": 524459302941677,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-128.png",
+					"type": "image/png",
+					"sid": 317238193133486,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-256.png",
+					"type": "image/png",
+					"sid": 794923678388327,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-32.png",
+					"type": "image/png",
+					"sid": 702234050555956,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-512.png",
+					"type": "image/png",
+					"sid": 960669708819118,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-64.png",
+					"type": "image/png",
+					"sid": 953093109279225,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"general": {
+			"items": [],
+			"subfolders": []
+		}
+	},
+	"timelines": {
+		"items": [],
+		"subfolders": [
+			{
+				"items": [],
+				"subfolders": []
+			}
+		]
+	},
+	"properties": {
+		"description": "",
+		"version": "1.0.0.0",
+		"author": "",
+		"authorEmail": "",
+		"authorWebsite": "",
+		"appId": "",
+		"pixelRounding": false,
+		"useLoaderLayout": false,
+		"fullscreenMode": "letterbox-scale",
+		"fullscreenQuality": "high",
+		"viewportFit": "auto",
+		"backgroundColor": [
+			0,
+			0,
+			0,
+			0
+		],
+		"splashColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"useThemeColor": false,
+		"themeColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"useHighDpi": true,
+		"orientations": "landscape",
+		"enableWebGL": true,
+		"gpuPreference": "high-performance",
+		"framerateMode": "vsync",
+		"compositingMode": "standard",
+		"sampling": "trilinear",
+		"downscaling": "medium",
+		"maxSpriteSheetSize": 2048,
+		"loaderStyle": "splash",
+		"preloadSounds": true,
+		"clearBackground": true,
+		"enhancedAccelerationPrecision": true,
+		"cordovaiOSScheme": "file"
+	},
+	"viewportWidth": 1600,
+	"viewportHeight": 1200,
+	"firstLayout": null
+}

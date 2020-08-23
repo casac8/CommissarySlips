@@ -1,0 +1,163 @@
+{
+	"name": "Post game sheet 2",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 701571649577137
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "PG2Text",
+					"sid": 387022156925813,
+					"parameters": {
+						"text": "\"But in an Alabama prison, it's the only place where inmates can buy essentials like supplemental food, toiletries, paper, clothing and, in some facilities, tobacco products.\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 790328022180604,
+					"parameters": {
+						"seconds": "6"
+					}
+				},
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 494544652299191,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 219696297997067
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "GoAhead",
+					"sid": 127035956969225
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 966257930103544,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 988372027372902
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 529297610798187,
+					"parameters": {
+						"object": "GoAhead"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 232182875658900,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 118851919175419
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Back",
+					"sid": 328847558341775
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 442436595281877,
+					"parameters": {
+						"which": "previous"
+					}
+				}
+			],
+			"sid": 549777731277451
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 677921507443067,
+					"parameters": {
+						"object": "Back"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 328034538816432,
+					"parameters": {
+						"which": "previous"
+					}
+				}
+			],
+			"sid": 525061721894988
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 612034516312752
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 956385621575143,
+					"parameters": {
+						"variable": "SlideValue",
+						"value": "8"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "SlidecounterOD",
+					"sid": 449888525988105,
+					"parameters": {
+						"text": "(str(SlideValue))"
+					}
+				}
+			],
+			"sid": 158847057010703
+		}
+	],
+	"sid": 263672256113984
+}

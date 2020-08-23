@@ -1,0 +1,190 @@
+{
+	"name": "Post game sheet 22",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 137267792270115
+				}
+			],
+			"actions": [
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 722792164252108,
+					"parameters": {
+						"tag": "\"BackgroundMusic\"",
+						"db": "0",
+						"duration": "3",
+						"ending": "keep-playing"
+					}
+				},
+				{
+					"id": "set-master-volume",
+					"objectClass": "Audio",
+					"sid": 445612151996445,
+					"parameters": {
+						"db": "0"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "PG22text",
+					"sid": 875687095911676,
+					"parameters": {
+						"text": "\"Reliance on commissaries has intensified since the emergence of COVID-19, as inmates have become more concerned with cleanliness, hygiene and sanitary food preparation.\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 497205371027094,
+					"parameters": {
+						"seconds": "8"
+					}
+				},
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 776959633081496,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 693114493458014
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "GoAhead",
+					"sid": 511537119536033
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 473561025943884,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 721182650385301
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 585463751770854,
+					"parameters": {
+						"object": "GoAhead"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 917583135621573,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 936787858485147
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Back",
+					"sid": 414077331562670
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 916258197068666,
+					"parameters": {
+						"which": "previous"
+					}
+				}
+			],
+			"sid": 719811887296579
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 896370298766370,
+					"parameters": {
+						"object": "Back"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 165848579203932,
+					"parameters": {
+						"which": "previous"
+					}
+				}
+			],
+			"sid": 392235243381412
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 510843552790010
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 985878196083469,
+					"parameters": {
+						"variable": "SlidevalueDD",
+						"value": "30"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "SlideCounterDD",
+					"sid": 571084267821824,
+					"parameters": {
+						"text": "(str(SlideValueDD))"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "SlidecounterOD",
+					"sid": 395765567991753,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 920777072949041
+		}
+	],
+	"sid": 211739650954361
+}

@@ -1,0 +1,203 @@
+{
+	"name": "Post game sheet 17.5",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 961827040181080
+				}
+			],
+			"actions": [
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 692299679558052,
+					"parameters": {
+						"tag": "\"BackgroundMusic\"",
+						"db": "0",
+						"duration": "3",
+						"ending": "keep-playing"
+					}
+				},
+				{
+					"id": "set-master-volume",
+					"objectClass": "Audio",
+					"sid": 138202042428329,
+					"parameters": {
+						"db": "0"
+					}
+				}
+			],
+			"sid": 233214985184920
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 350304809022875
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "PGText175one",
+					"sid": 940131730596171,
+					"parameters": {
+						"text": "\"The Alabama Department of Corrections said in its statement that it provides all state inmates with sufficient food and toiletries.\"\n"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 830843424288139,
+					"parameters": {
+						"seconds": "5"
+					}
+				},
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 787303835462297,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 788719187438193
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "GoAhead",
+					"sid": 728796199169128
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 870354233350670,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 116239891624451
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 913096807847266,
+					"parameters": {
+						"object": "GoAhead"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 161808290893420,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 278560659053598
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Back",
+					"sid": 809666797878734
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 688178426913430,
+					"parameters": {
+						"which": "previous"
+					}
+				}
+			],
+			"sid": 496922719561113
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 864098320421319,
+					"parameters": {
+						"object": "Back"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 147240461426629,
+					"parameters": {
+						"which": "previous"
+					}
+				}
+			],
+			"sid": 425365256124591
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 729701544190557
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 388534933002361,
+					"parameters": {
+						"variable": "SlidevalueDD",
+						"value": "25"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "SlideCounterDD",
+					"sid": 730495500457531,
+					"parameters": {
+						"text": "(str(SlideValueDD))"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "SlidecounterOD",
+					"sid": 106184567295713,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 279559027351417
+		}
+	],
+	"sid": 847776565109532
+}

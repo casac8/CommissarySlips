@@ -1,0 +1,57 @@
+{
+	"name": "Fosterheadshot",
+	"plugin-id": "Sprite",
+	"sid": 103221492079756,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 492,
+						"height": 460,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6450280,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.5,
+								0,
+								0.9979674796747967,
+								0,
+								0.9979674796747967,
+								0.5,
+								0.9979674796747967,
+								0.9978260869565218,
+								0.5,
+								0.9978260869565218,
+								0,
+								0.9978260869565218,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 664745124753658,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

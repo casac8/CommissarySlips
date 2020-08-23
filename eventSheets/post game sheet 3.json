@@ -1,0 +1,328 @@
+{
+	"name": "Post game sheet 3",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 215123363540614
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 295547370685754,
+					"parameters": {
+						"audio-file": "CarrollAudio1WAV",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 764148824152411
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 607601621022321
+				}
+			],
+			"actions": [
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 850963210884031,
+					"parameters": {
+						"tag": "\"BackgroundMusic\"",
+						"db": "-15",
+						"duration": "0.5",
+						"ending": "keep-playing"
+					}
+				}
+			],
+			"sid": 111993237846163
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "Carroltext1",
+					"sid": 589776387360348
+				}
+			],
+			"actions": [
+				{
+					"id": "typewriter-text",
+					"objectClass": "Carroltext1",
+					"sid": 177289763702343,
+					"parameters": {
+						"text": "\"People think of it like commissary at camp, where it really was you were buying those extra things that were either not nutritionally required, or things that were not required to stay safe and clean. So they were luxury items, or they were comfort items.\"",
+						"duration": "16"
+					}
+				}
+			],
+			"sid": 605929204670816
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "Carroltext1",
+					"sid": 686489129937314
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 680007916660961,
+					"parameters": {
+						"seconds": "17"
+					}
+				},
+				{
+					"id": "typewriter-text",
+					"objectClass": "CarrollText2",
+					"sid": 309905240731489,
+					"parameters": {
+						"text": "\"But that’s not what commissary is in jails and prisons. Commissary, as you said, can be basic survival in terms of getting enough calories.\"",
+						"duration": "11"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 339189405362871,
+					"parameters": {
+						"seconds": "13"
+					}
+				},
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 903362077451159,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 805757759814753
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "GoAhead",
+					"sid": 713152110606182
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 888355132384083,
+					"parameters": {
+						"which": "next"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 382534937449982,
+					"parameters": {
+						"tag": "\"\""
+					}
+				}
+			],
+			"sid": 540480128202485
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 557231814692329,
+					"parameters": {
+						"object": "GoAhead"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 552449913120626,
+					"parameters": {
+						"which": "next"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 342003567425939,
+					"parameters": {
+						"tag": "\"\""
+					}
+				}
+			],
+			"sid": 474015004154946
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Back",
+					"sid": 884692040319492
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 531346921020252,
+					"parameters": {
+						"which": "previous"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 151997311472132,
+					"parameters": {
+						"tag": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 620723139820835,
+					"parameters": {
+						"seconds": "0.0"
+					}
+				},
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 742434108730966,
+					"parameters": {
+						"tag": "\"BackgroundMusic\"",
+						"db": "0",
+						"duration": "3",
+						"ending": "keep-playing"
+					}
+				},
+				{
+					"id": "set-master-volume",
+					"objectClass": "Audio",
+					"sid": 944289301694437,
+					"parameters": {
+						"db": "0"
+					}
+				}
+			],
+			"sid": 811868486374146
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 851220354696977,
+					"parameters": {
+						"object": "Back"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 671291369777054,
+					"parameters": {
+						"which": "previous"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 530682035623306,
+					"parameters": {
+						"tag": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 332717347222239,
+					"parameters": {
+						"seconds": "0.0"
+					}
+				},
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 433266992963847,
+					"parameters": {
+						"tag": "\"BackgroundMusic\"",
+						"db": "0",
+						"duration": "3",
+						"ending": "keep-playing"
+					}
+				},
+				{
+					"id": "set-master-volume",
+					"objectClass": "Audio",
+					"sid": 500307834059953,
+					"parameters": {
+						"db": "0"
+					}
+				}
+			],
+			"sid": 957859033964994
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 612034516312752
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 463615988891957,
+					"parameters": {
+						"variable": "SlideValue",
+						"value": "9"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "SlidecounterOD",
+					"sid": 449888525988105,
+					"parameters": {
+						"text": "(str(SlideValue))"
+					}
+				}
+			],
+			"sid": 158847057010703
+		}
+	],
+	"sid": 779604150461781
+}

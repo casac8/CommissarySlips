@@ -1,0 +1,252 @@
+{
+	"name": "Post game sheet 12",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 121034010231711
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 249118650381409,
+					"parameters": {
+						"audio-file": "FosterAudio3WAV",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 170088706361602
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 868399127132902
+				}
+			],
+			"actions": [
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 578570308912908,
+					"parameters": {
+						"tag": "\"BackgroundMusic\"",
+						"db": "-15",
+						"duration": "0.5",
+						"ending": "keep-playing"
+					}
+				}
+			],
+			"sid": 107283629599709
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "LisaFosterText1",
+					"sid": 702656704808323
+				}
+			],
+			"actions": [
+				{
+					"id": "typewriter-text",
+					"objectClass": "LisaFosterText1",
+					"sid": 594427046099878,
+					"parameters": {
+						"text": "\"It puts families in a horrible position of having to decide, you know, do I pay the rent this month or do I make sure that, you know, spouse, father, uncle, brother, whomever, has, you know, enough to eat while they’re in prison?\"\n",
+						"duration": "19"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 925530230432189,
+					"parameters": {
+						"seconds": "21"
+					}
+				},
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 961914883986910,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 578042648490999
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "GoAhead",
+					"sid": 226577272660537
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 533306788634400,
+					"parameters": {
+						"which": "next"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 367326329690367,
+					"parameters": {
+						"tag": "\"\""
+					}
+				}
+			],
+			"sid": 414347999170666
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 824448963538762,
+					"parameters": {
+						"object": "GoAhead"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 152609274799354,
+					"parameters": {
+						"which": "next"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 243724291054508,
+					"parameters": {
+						"tag": "\"\""
+					}
+				}
+			],
+			"sid": 281138981474903
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Back",
+					"sid": 994325336310104
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 569766826954907,
+					"parameters": {
+						"which": "previous"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 924857377263275,
+					"parameters": {
+						"tag": "\"\""
+					}
+				}
+			],
+			"sid": 110952382225026
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 177863349291343,
+					"parameters": {
+						"object": "Back"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 891466975573108,
+					"parameters": {
+						"which": "previous"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 366140922702902,
+					"parameters": {
+						"tag": "\"\""
+					}
+				}
+			],
+			"sid": 313709877973688
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 352369240517245
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 763686875304154,
+					"parameters": {
+						"variable": "SlidevalueDD",
+						"value": "19"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "SlideCounterDD",
+					"sid": 264132287269823,
+					"parameters": {
+						"text": "(str(SlideValueDD))"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "SlidecounterOD",
+					"sid": 359896361431796,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 605253295513962
+		}
+	],
+	"sid": 103225785112203
+}

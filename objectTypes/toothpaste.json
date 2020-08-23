@@ -1,0 +1,55 @@
+{
+	"name": "Toothpaste",
+	"plugin-id": "Sprite",
+	"sid": 893189677087485,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 130100276349180
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 409,
+						"height": 237,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3343485,
+						"collisionPoly": {
+							"points": [
+								0.0024449877750611247,
+								0.004219409282700422,
+								0.9975550122249389,
+								0.004219409282700422,
+								0.9975550122249389,
+								0.9957805907172996,
+								0.0024449877750611247,
+								0.9957805907172996
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 559404333417710,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,252 @@
+{
+	"name": "Post game sheet 19",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 430185010020151
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 168712782523561,
+					"parameters": {
+						"audio-file": "JUSTINAUDIOHUSTLINGWAV",
+						"loop": "not-looping",
+						"volume": "7",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 179783248252005
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 864816497875559
+				}
+			],
+			"actions": [
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 545130161947692,
+					"parameters": {
+						"tag": "\"BackgroundMusic\"",
+						"db": "-20",
+						"duration": "0.5",
+						"ending": "keep-playing"
+					}
+				}
+			],
+			"sid": 519889806260414
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "PG19JustinAudioText",
+					"sid": 560097637430921
+				}
+			],
+			"actions": [
+				{
+					"id": "typewriter-text",
+					"objectClass": "PG19JustinAudioText",
+					"sid": 240747831265729,
+					"parameters": {
+						"text": "\"Usually, people that don’t have commissary, they’ll pick up something that they call hustling, which, they’ll wash somebody’s clothes or they’ll roll cigarettes for somebody. Or again they’ll sell dope for somebody, and so the person that actually has it don’t get caught, it puts them as basically a frontrunner, and they’ll get paid from doing that, and that’s how they make their money. Or they’ll draw, they’ll gamble.\"\n",
+						"duration": "34"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 270817210036207,
+					"parameters": {
+						"seconds": "36"
+					}
+				},
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 332427014931187,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 263722425685080
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "GoAhead",
+					"sid": 545263398739117
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 495657059994406,
+					"parameters": {
+						"which": "next"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 133580317581926,
+					"parameters": {
+						"tag": "\"\""
+					}
+				}
+			],
+			"sid": 766235522243940
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 389002210138966,
+					"parameters": {
+						"object": "GoAhead"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 835652593392936,
+					"parameters": {
+						"which": "next"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 193031580835261,
+					"parameters": {
+						"tag": "\"\""
+					}
+				}
+			],
+			"sid": 616677664850806
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Back",
+					"sid": 576908579145916
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 715371716079303,
+					"parameters": {
+						"which": "previous"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 148390822913129,
+					"parameters": {
+						"tag": "\"\""
+					}
+				}
+			],
+			"sid": 797411679395042
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 899017560370944,
+					"parameters": {
+						"object": "Back"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 486167072800506,
+					"parameters": {
+						"which": "previous"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 360955646585136,
+					"parameters": {
+						"tag": "\"\""
+					}
+				}
+			],
+			"sid": 330658913935239
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 123172224092608
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 929156177094881,
+					"parameters": {
+						"variable": "SlidevalueDD",
+						"value": "27"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "SlideCounterDD",
+					"sid": 345051788172667,
+					"parameters": {
+						"text": "(str(SlideValueDD))"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "SlidecounterOD",
+					"sid": 634052339569802,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 674160220806068
+		}
+	],
+	"sid": 814557838314600
+}

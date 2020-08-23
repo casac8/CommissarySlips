@@ -1,0 +1,181 @@
+{
+	"name": "Event sheet 4",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 486416126331894
+				}
+			],
+			"actions": [
+				{
+					"id": "typewriter-text",
+					"objectClass": "Text5",
+					"sid": 310254176445338,
+					"parameters": {
+						"text": "\"In a moment, you’ll have a chance to spend $15 at a mock Alabama prison commissary.\"",
+						"duration": "5"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 417302502761464,
+					"parameters": {
+						"seconds": "6"
+					}
+				},
+				{
+					"id": "typewriter-text",
+					"objectClass": "Text5a",
+					"sid": 573620542971268,
+					"parameters": {
+						"text": "\"The prices are accurate as of June 2020, and most items are available for sale in all Alabama prisons.\"",
+						"duration": "5"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 564303228286218,
+					"parameters": {
+						"seconds": "7"
+					}
+				},
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 326713730878297,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 236859454781677
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "GoAhead",
+					"sid": 573181578405026
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 600217168618906,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 583707315015679
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 614420504927894,
+					"parameters": {
+						"object": "GoAhead"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 350892310937811,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 656515212398741
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Back",
+					"sid": 244265243969130
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 688649556287393,
+					"parameters": {
+						"which": "previous"
+					}
+				}
+			],
+			"sid": 120019251173223
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 126190850915082,
+					"parameters": {
+						"object": "Back"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 189641104267699,
+					"parameters": {
+						"which": "previous"
+					}
+				}
+			],
+			"sid": 173504789507126
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 991523020808876
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 580235460129524,
+					"parameters": {
+						"variable": "SlideValue",
+						"value": "4"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "SlidecounterOD",
+					"sid": 874864739223703,
+					"parameters": {
+						"text": "SlideValue"
+					}
+				}
+			],
+			"sid": 831688452732140
+		}
+	],
+	"sid": 748001301111216
+}

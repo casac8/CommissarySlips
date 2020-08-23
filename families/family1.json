@@ -1,0 +1,24 @@
+{
+	"name": "Family1",
+	"plugin-id": "Sprite",
+	"sid": 212053495292266,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"ChewingTobacco",
+		"Vaseline",
+		"Toothpaste",
+		"Toothbrush",
+		"Shorts",
+		"ProteinBar",
+		"Ibuprofen",
+		"HoneyBun",
+		"Fixodent",
+		"Faygo",
+		"Cigarettes",
+		"ChipsDone",
+		"Cereal",
+		"Advil"
+	]
+}

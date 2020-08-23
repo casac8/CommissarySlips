@@ -1,0 +1,57 @@
+{
+	"name": "Fixodent",
+	"plugin-id": "Sprite",
+	"sid": 435201635965787,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 422,
+						"height": 140,
+						"originX": 0.466824644549763,
+						"originY": 0.7857142857142857,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8909631,
+						"collisionPoly": {
+							"points": [
+								0.08530805687203798,
+								0.17142857142857154,
+								0.466824644549763,
+								0.04285714285714281,
+								0.8625592417061612,
+								0.12142857142857143,
+								0.943127962085308,
+								0.7857142857142857,
+								0.7014218009478673,
+								0.9571428571428573,
+								0.466824644549763,
+								0.9214285714285718,
+								0.23459715639810427,
+								0.9428571428571428,
+								0.021327014218009446,
+								0.7857142857142857
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 417615262090747,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

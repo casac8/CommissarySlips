@@ -1,0 +1,242 @@
+{
+	"name": "Event sheet 3",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 942644407126479
+				}
+			],
+			"actions": [
+				{
+					"id": "typewriter-text",
+					"objectClass": "Text2",
+					"sid": 305211924871834,
+					"parameters": {
+						"text": "\"And yet you say you can’t take proper care of your hygiene or get enough to eat without purchasing toiletries and food from the commissary.\"",
+						"duration": "6"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 824169459666907,
+					"parameters": {
+						"seconds": "4.5"
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "ProteinBar",
+					"sid": 266691312433799,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "position",
+						"end-x": "450",
+						"end-y": "650",
+						"time": "1.5",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "Toothpaste",
+					"sid": 268004422244736,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "position",
+						"end-x": "1150",
+						"end-y": "650",
+						"time": "1.50",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 405609613935172,
+					"parameters": {
+						"seconds": "2.5"
+					}
+				},
+				{
+					"id": "typewriter-text",
+					"objectClass": "Text2a",
+					"sid": 208494666805391,
+					"parameters": {
+						"text": "\"Welcome to life in an Alabama prison.\n\"",
+						"duration": "2"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 223841010974112,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 295867116488367,
+					"parameters": {
+						"audio-file": "doorslam",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 759932795584022,
+					"parameters": {
+						"seconds": "4"
+					}
+				},
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 320407940732005,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 403243794392470
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "GoAhead",
+					"sid": 414502532883926
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 306950717331287,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 930796649967115
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 372467338409489,
+					"parameters": {
+						"object": "GoAhead"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 330217097174096,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 871990236410269
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Back",
+					"sid": 157194647268049
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 505127713006583,
+					"parameters": {
+						"which": "previous"
+					}
+				}
+			],
+			"sid": 488029230677604
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 472338346121849,
+					"parameters": {
+						"object": "Back"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 604437188746042,
+					"parameters": {
+						"which": "previous"
+					}
+				}
+			],
+			"sid": 713527727302407
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 482145565332484
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 928175665732290,
+					"parameters": {
+						"variable": "SlideValue",
+						"value": "3"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "SlidecounterOD",
+					"sid": 188305352207771,
+					"parameters": {
+						"text": "(str(SlideValue))"
+					}
+				}
+			],
+			"sid": 532319195354966
+		}
+	],
+	"sid": 536381274084472
+}

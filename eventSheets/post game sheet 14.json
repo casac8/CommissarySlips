@@ -1,0 +1,163 @@
+{
+	"name": "Post game sheet 14",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 640582262676866
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 260332469763769,
+					"parameters": {
+						"seconds": "7"
+					}
+				},
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 125963764403301,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 665253348968517
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "GoAhead",
+					"sid": 538109340345197
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 803131684658073,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 733183998667701
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 368852758416356,
+					"parameters": {
+						"object": "GoAhead"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 828971770994179,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 674643398357850
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Back",
+					"sid": 768801655363816
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 231201827372076,
+					"parameters": {
+						"which": "previous"
+					}
+				}
+			],
+			"sid": 959757379555347
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 319983016187805,
+					"parameters": {
+						"object": "Back"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 858094637969583,
+					"parameters": {
+						"which": "previous"
+					}
+				}
+			],
+			"sid": 990543226343378
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 888757484050262
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 588331634454063,
+					"parameters": {
+						"variable": "SlidevalueDD",
+						"value": "21"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "SlideCounterDD",
+					"sid": 395913127675204,
+					"parameters": {
+						"text": "(str(SlideValueDD))"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "SlidecounterOD",
+					"sid": 422183184637294,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 489208229122352
+		}
+	],
+	"sid": 733687686320938
+}

@@ -1,0 +1,179 @@
+{
+	"name": "Post game sheet 5.5",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 979332310025858
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "PostGame45Text",
+					"sid": 388494470640057,
+					"parameters": {
+						"text": "\"The Alabama Department of Corrections acknowledged in a statement that it does not pay inmates for most jobs they are assigned to perform in prison.*\""
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "PostGame55Text2",
+					"sid": 181822006920866,
+					"parameters": {
+						"text": "\"* Read the department's full statement at the following link: https://bit.ly/319K2di\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 466478406810013,
+					"parameters": {
+						"seconds": "8"
+					}
+				},
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 758490818247763,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 954476990964012
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 941801227915448
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 636627179820982,
+					"parameters": {
+						"variable": "SlidevalueDD",
+						"value": "12"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "SlideCounterDD",
+					"sid": 547498907788773,
+					"parameters": {
+						"text": "(str(SlideValueDD))"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "SlidecounterOD",
+					"sid": 451679178865111,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 585525909151585
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "GoAhead",
+					"sid": 156564627557072
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 989215774397609,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 720105115490179
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 810521017949201,
+					"parameters": {
+						"object": "GoAhead"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 138155297771228,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 299354973614723
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Back",
+					"sid": 792351435130781
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 584550187610055,
+					"parameters": {
+						"which": "previous"
+					}
+				}
+			],
+			"sid": 232095765470645
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 192514912699495,
+					"parameters": {
+						"object": "Back"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 872667907269346,
+					"parameters": {
+						"which": "previous"
+					}
+				}
+			],
+			"sid": 291229454378102
+		}
+	],
+	"sid": 567577854498463
+}

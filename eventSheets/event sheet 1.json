@@ -1,0 +1,244 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-touch-start",
+					"objectClass": "Touch",
+					"sid": 901502869796948
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 145075134734411,
+					"parameters": {
+						"audio-file": "Commissary Slips Background MusicWAV",
+						"loop": "looping",
+						"volume": "0",
+						"tag-optional": "\"BackgroundMusic\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Touchtostart",
+					"sid": 773677365874487,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 256981781602961,
+					"parameters": {
+						"seconds": "6"
+					}
+				},
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 730055590852464,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 749059410898930
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-click",
+					"objectClass": "Mouse",
+					"sid": 216729600733907
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 742065892454336,
+					"parameters": {
+						"audio-file": "Commissary Slips Background MusicWAV",
+						"loop": "looping",
+						"volume": "0",
+						"tag-optional": "\"BackgroundMusic\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Touchtostart",
+					"sid": 703872210652623,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 836248909348397,
+					"parameters": {
+						"seconds": "6"
+					}
+				},
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 369630578724422,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 247407610475446
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 215133178243820
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Touchtostart",
+					"sid": 192769452482168,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 289397526638527,
+					"parameters": {
+						"seconds": "1"
+					}
+				},
+				{
+					"id": "set-fade-in-time",
+					"objectClass": "Touchtostart",
+					"sid": 920344214872573,
+					"behaviorType": "Fade",
+					"parameters": {
+						"fade-in-time": "7"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Touchtostart",
+					"sid": 290384318067937,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "start-fade",
+					"objectClass": "Touchtostart",
+					"sid": 175936296870446,
+					"behaviorType": "Fade"
+				}
+			],
+			"sid": 381083767701387
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "GoAhead",
+					"sid": 104039662429860
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 569951764034836,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 212960634162700
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 596689574504499,
+					"parameters": {
+						"object": "GoAhead"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 581816822026474,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 617068246921280
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Back",
+					"sid": 191649333897153
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 142292518927235,
+					"parameters": {
+						"which": "previous"
+					}
+				}
+			],
+			"sid": 269084603445664
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 786827865089012,
+					"parameters": {
+						"object": "Back"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 733329958082650,
+					"parameters": {
+						"which": "previous"
+					}
+				}
+			],
+			"sid": 616173615879874
+		}
+	],
+	"sid": 738037400690374
+}

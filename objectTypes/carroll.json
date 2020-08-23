@@ -1,0 +1,57 @@
+{
+	"name": "Carroll",
+	"plugin-id": "Sprite",
+	"sid": 202643323376093,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 438,
+						"height": 477,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 824933,
+						"collisionPoly": {
+							"points": [
+								0.002066115702479339,
+								0.0019011406844106464,
+								0.5,
+								0.0019011406844106464,
+								0.9958677685950413,
+								0.0019011406844106464,
+								0.9958677685950413,
+								0.5,
+								0.9958677685950413,
+								0.9961977186311787,
+								0.5,
+								0.9961977186311787,
+								0.002066115702479339,
+								0.9961977186311787,
+								0.002066115702479339,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 280501117111534,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

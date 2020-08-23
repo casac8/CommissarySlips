@@ -1,0 +1,37 @@
+{
+	"name": "Toothbrush",
+	"plugin-id": "Sprite",
+	"sid": 834333284747457,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 187,
+						"height": 391,
+						"originX": 0.49732620320855614,
+						"originY": 0.4961636828644501,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4997345,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 590779786466126,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

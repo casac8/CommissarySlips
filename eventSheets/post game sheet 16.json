@@ -1,0 +1,206 @@
+{
+	"name": "Post game sheet 16",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 274049837679798
+				}
+			],
+			"actions": [
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 192293508367289,
+					"parameters": {
+						"tag": "\"BackgroundMusic\"",
+						"db": "0",
+						"duration": "3",
+						"ending": "keep-playing"
+					}
+				},
+				{
+					"id": "set-master-volume",
+					"objectClass": "Audio",
+					"sid": 148748429728972,
+					"parameters": {
+						"db": "0"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "PG16Text1",
+					"sid": 354945485519849,
+					"parameters": {
+						"text": "\"Alabama’s prisons feed inmates standard meals and provide some toiletries.\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 170099449667072,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "PG16Text2",
+					"sid": 976617315945188,
+					"parameters": {
+						"text": "\"But you consider commissary items essential to your survival, as you say you receive too little food, the toothpaste and soap are nearly unusable, and other toiletries are in short supply.\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 732226867098061,
+					"parameters": {
+						"seconds": "8"
+					}
+				},
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 907310247502647,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 310697745406840
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "GoAhead",
+					"sid": 219076015420270
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 648851986402729,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 567784941447623
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 919030440176663,
+					"parameters": {
+						"object": "GoAhead"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 378415826187536,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 966385481097868
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Back",
+					"sid": 128394052746616
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 103556756505733,
+					"parameters": {
+						"which": "previous"
+					}
+				}
+			],
+			"sid": 676245847520297
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 592432936303133,
+					"parameters": {
+						"object": "Back"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 293543153134373,
+					"parameters": {
+						"which": "previous"
+					}
+				}
+			],
+			"sid": 907260408429880
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 124651296364306
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 338156211480332,
+					"parameters": {
+						"variable": "SlidevalueDD",
+						"value": "23"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "SlideCounterDD",
+					"sid": 213943872650079,
+					"parameters": {
+						"text": "(str(SlideValueDD))"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "SlidecounterOD",
+					"sid": 202195275304035,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 341341188052522
+		}
+	],
+	"sid": 194482498472148
+}

@@ -1,0 +1,219 @@
+{
+	"name": "Post game sheet 13",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 525686026627128
+				}
+			],
+			"actions": [
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 114230648711623,
+					"parameters": {
+						"tag": "\"BackgroundMusic\"",
+						"db": "0",
+						"duration": "3",
+						"ending": "keep-playing"
+					}
+				},
+				{
+					"id": "set-master-volume",
+					"objectClass": "Audio",
+					"sid": 342663948258350,
+					"parameters": {
+						"db": "0"
+					}
+				}
+			],
+			"sid": 990588357148658
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 875405461401104
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "PG13Text1",
+					"sid": 393198646669967,
+					"parameters": {
+						"text": "\"Meanwhile, Alabama’s network of state prison commissaries averages more than $1 million in profit each month, according to internal Department of Corrections records obtained by Reckon.\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 972189563280188,
+					"parameters": {
+						"seconds": "7"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "PG13Text2",
+					"sid": 773082630314631,
+					"parameters": {
+						"text": "\"Between October 2019 and May 2020, the stores collectively brought in more than $8.5 million in profit, more than $1.2 million of which was generated in the month of May alone.\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 830153060336323,
+					"parameters": {
+						"seconds": "8"
+					}
+				},
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 365968527552845,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 126326350219023
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "GoAhead",
+					"sid": 813009687596313
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 167268229798591,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 494516349864885
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 329282151738692,
+					"parameters": {
+						"object": "GoAhead"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 830344429569148,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 462375074791539
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Back",
+					"sid": 848579589833206
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 605059948899485,
+					"parameters": {
+						"which": "previous"
+					}
+				}
+			],
+			"sid": 683662012075840
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 231892363612593,
+					"parameters": {
+						"object": "Back"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 381031634832844,
+					"parameters": {
+						"which": "previous"
+					}
+				}
+			],
+			"sid": 904530749564184
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 981638763596286
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 296669882050715,
+					"parameters": {
+						"variable": "SlidevalueDD",
+						"value": "20"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "SlideCounterDD",
+					"sid": 959071224935285,
+					"parameters": {
+						"text": "(str(SlideValueDD))"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "SlidecounterOD",
+					"sid": 161458970757539,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 120017365810389
+		}
+	],
+	"sid": 629829143924710
+}

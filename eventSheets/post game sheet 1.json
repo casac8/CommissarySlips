@@ -1,0 +1,163 @@
+{
+	"name": "Post game sheet 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 542929765716941
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "Text3",
+					"sid": 715337395329873,
+					"parameters": {
+						"text": "\"The commissary is a well-known part of prison life, often depicted in movies, books and TV shows as a place to socialize and pick up extras like candy and magazines.\"\n"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 310853622047973,
+					"parameters": {
+						"seconds": "8"
+					}
+				},
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 420803838264772,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 995316015246461
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "GoAhead",
+					"sid": 274686717417132
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 654456241893761,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 949205050322423
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 380681023498540,
+					"parameters": {
+						"object": "GoAhead"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 319097166125149,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 346649953773495
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Back",
+					"sid": 793348243349210
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 132322279739259,
+					"parameters": {
+						"which": "previous"
+					}
+				}
+			],
+			"sid": 265557848399897
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 900943706518038,
+					"parameters": {
+						"object": "Back"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 168903530003982,
+					"parameters": {
+						"which": "previous"
+					}
+				}
+			],
+			"sid": 911441928083076
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 612034516312752
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 932256002366164,
+					"parameters": {
+						"variable": "SlideValue",
+						"value": "7"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "SlidecounterOD",
+					"sid": 449888525988105,
+					"parameters": {
+						"text": "(str(SlideValue))"
+					}
+				}
+			],
+			"sid": 158847057010703
+		}
+	],
+	"sid": 855255206898730
+}

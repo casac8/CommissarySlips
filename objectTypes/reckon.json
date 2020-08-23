@@ -1,0 +1,57 @@
+{
+	"name": "Reckon",
+	"plugin-id": "Sprite",
+	"sid": 353233921999318,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 2121,
+						"height": 846,
+						"originX": 0.5091937765205092,
+						"originY": 0.5118203309692673,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3250280,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.5091937765205092,
+								0,
+								1,
+								0,
+								1,
+								0.5118203309692673,
+								1,
+								1,
+								0.5091937765205092,
+								1,
+								0,
+								1,
+								0,
+								0.5118203309692673
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 502393116678050,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

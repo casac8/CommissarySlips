@@ -1,0 +1,55 @@
+{
+	"name": "Cigarettes",
+	"plugin-id": "Sprite",
+	"sid": 380443045566191,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 217,
+						"height": 292,
+						"originX": 0.9861751152073732,
+						"originY": 0.6335616438356164,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4104086,
+						"collisionPoly": {
+							"points": [
+								0.027649769585253458,
+								0.1780821917808219,
+								0.9861751152073732,
+								0.07876712328767126,
+								0.9493087557603687,
+								0.6335616438356164,
+								0.9723502304147466,
+								0.3664383561643836,
+								0.9861751152073732,
+								0.2773972602739726,
+								0.19815668202764977,
+								0.958904109589041,
+								0.009216589861751152,
+								0.6335616438356164
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 943419792849913,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

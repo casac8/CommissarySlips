@@ -1,0 +1,190 @@
+{
+	"name": "Post game sheet 20",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 157781146850813
+				}
+			],
+			"actions": [
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 565643019487634,
+					"parameters": {
+						"tag": "\"BackgroundMusic\"",
+						"db": "0",
+						"duration": "3",
+						"ending": "keep-playing"
+					}
+				},
+				{
+					"id": "set-master-volume",
+					"objectClass": "Audio",
+					"sid": 345405657089269,
+					"parameters": {
+						"db": "0"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "PG20Text",
+					"sid": 139773922835737,
+					"parameters": {
+						"text": "\"Experts confirm that the reliance on commissaries drives aberrant behavior inside correctional facilities, helping to perpetuate a destructive cycle of violence and criminality.\"\n"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 557094809128051,
+					"parameters": {
+						"seconds": "8"
+					}
+				},
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 379550334575193,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 714498053192490
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "GoAhead",
+					"sid": 535294637280816
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 128818863640829,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 608540433025038
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 561907124757087,
+					"parameters": {
+						"object": "GoAhead"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 719737578738636,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 559301643514810
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Back",
+					"sid": 456778229928181
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 271644239715803,
+					"parameters": {
+						"which": "previous"
+					}
+				}
+			],
+			"sid": 637092464277483
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 638939144321472,
+					"parameters": {
+						"object": "Back"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 641460253746382,
+					"parameters": {
+						"which": "previous"
+					}
+				}
+			],
+			"sid": 977056803635566
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 253509202506804
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 298351071144354,
+					"parameters": {
+						"variable": "SlidevalueDD",
+						"value": "28"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "SlideCounterDD",
+					"sid": 243657386914951,
+					"parameters": {
+						"text": "(str(SlideValueDD))"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "SlidecounterOD",
+					"sid": 698877075914893,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 566663532446202
+		}
+	],
+	"sid": 579756277544172
+}

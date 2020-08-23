@@ -1,0 +1,206 @@
+{
+	"name": "Post game sheet 24",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 892454662593365
+				}
+			],
+			"actions": [
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 814116587752936,
+					"parameters": {
+						"tag": "\"BackgroundMusic\"",
+						"db": "0",
+						"duration": "3",
+						"ending": "keep-playing"
+					}
+				},
+				{
+					"id": "set-master-volume",
+					"objectClass": "Audio",
+					"sid": 262298853962297,
+					"parameters": {
+						"db": "0"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "PG24text1",
+					"sid": 726209266519784,
+					"parameters": {
+						"text": "\"Yet day in and day out, finding a way to buy things from the commissary remains a necessary but grueling grind, both for Alabama’s approximately 20,000 state inmates and for their loved ones on the outside.\"\n"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 704615002504138,
+					"parameters": {
+						"seconds": "8"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "PG24Text2",
+					"sid": 344314213672017,
+					"parameters": {
+						"text": "\"That’s just the grim economic reality of Alabama’s state prison system.\"\n"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 643368630015259,
+					"parameters": {
+						"seconds": "5"
+					}
+				},
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 134439128523306,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 250052988274295
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "GoAhead",
+					"sid": 949380794732103
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 137200569169364,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 846666538030767
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 364041215396796,
+					"parameters": {
+						"object": "GoAhead"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 738215917285576,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 716661159293340
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Back",
+					"sid": 487150909634260
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 325958627735340,
+					"parameters": {
+						"which": "previous"
+					}
+				}
+			],
+			"sid": 305964147287332
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 440865502873550,
+					"parameters": {
+						"object": "Back"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 503154992522181,
+					"parameters": {
+						"which": "previous"
+					}
+				}
+			],
+			"sid": 334637418668875
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 339173996114273
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 225832068961707,
+					"parameters": {
+						"variable": "SlidevalueDD",
+						"value": "32"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "SlideCounterDD",
+					"sid": 571993767220447,
+					"parameters": {
+						"text": "(str(SlideValueDD))"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "SlidecounterOD",
+					"sid": 969079996295206,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 660109628924786
+		}
+	],
+	"sid": 906454230745226
+}

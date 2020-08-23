@@ -1,0 +1,68 @@
+{
+	"name": "Sprite4",
+	"plugin-id": "Sprite",
+	"sid": 297242383200278,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 664576141748349
+		},
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 787569987152931
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1101,
+						"height": 593,
+						"originX": 0.5040871934604905,
+						"originY": 0.7116357504215851,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4752041,
+						"collisionPoly": {
+							"points": [
+								0.043596730245231606,
+								0.19392917369308602,
+								0.5040871934604905,
+								0.06408094435075885,
+								0.9754768392370572,
+								0.17200674536256325,
+								0.9200726612170754,
+								0.7116357504215851,
+								0.8047229791099001,
+								0.9325463743676222,
+								0.5040871934604905,
+								0.9156829679595279,
+								0.20072661217075385,
+								0.9359190556492412,
+								0.03451407811080836,
+								0.7116357504215851
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 259547151098154,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

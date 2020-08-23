@@ -1,0 +1,250 @@
+{
+	"name": "Post game sheet 11",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 874021144440859
+				}
+			],
+			"actions": [
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 430910463572337,
+					"parameters": {
+						"tag": "\"BackgroundMusic\"",
+						"db": "0",
+						"duration": "3",
+						"ending": "keep-playing"
+					}
+				},
+				{
+					"id": "set-master-volume",
+					"objectClass": "Audio",
+					"sid": 498320925572612,
+					"parameters": {
+						"db": "0"
+					}
+				}
+			],
+			"sid": 950255400483391
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 314387004440524
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "Text4",
+					"sid": 360998003898716,
+					"parameters": {
+						"text": "\"But she often doesn’t have near that much, and sometimes you go weeks without an infusion of funds.\"\n"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 590450116360144,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "Sprite4",
+					"sid": 161729159064178,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"Move\"",
+						"property": "position",
+						"end-x": "800",
+						"end-y": "590",
+						"time": "2.5",
+						"ease": "easeinsine",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 927040251442009,
+					"parameters": {
+						"seconds": "4"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Text4a",
+					"sid": 787359933621363,
+					"parameters": {
+						"text": "\"You burn through whatever you get by the end of most weeks in a fruitless attempt to stay full, maintain your health and hygiene and achieve a sense of normalcy.\"\n"
+					}
+				},
+				{
+					"id": "start-fade",
+					"objectClass": "Sprite4",
+					"sid": 407225416416707,
+					"behaviorType": "Fade"
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 139203497968166,
+					"parameters": {
+						"seconds": "7.5"
+					}
+				},
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 686683014076044,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 985636118572814
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "GoAhead",
+					"sid": 842076559813635
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 929224949479580,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 890179425079851
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 232858062193833,
+					"parameters": {
+						"object": "GoAhead"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 273203925329349,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 607323256609699
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Back",
+					"sid": 830653157027764
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 730475649547704,
+					"parameters": {
+						"which": "previous"
+					}
+				}
+			],
+			"sid": 761575221357419
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 167151418219751,
+					"parameters": {
+						"object": "Back"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 991739375798201,
+					"parameters": {
+						"which": "previous"
+					}
+				}
+			],
+			"sid": 340373160438119
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 563887740736337
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 468532342273758,
+					"parameters": {
+						"variable": "SlidevalueDD",
+						"value": "18"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "SlideCounterDD",
+					"sid": 391305620671196,
+					"parameters": {
+						"text": "(str(SlideValueDD))"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "SlidecounterOD",
+					"sid": 244539568513447,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 880890444800463
+		}
+	],
+	"sid": 350176049221023
+}

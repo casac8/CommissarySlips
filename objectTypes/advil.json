@@ -1,0 +1,57 @@
+{
+	"name": "Advil",
+	"plugin-id": "Sprite",
+	"sid": 488161141434308,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 625,
+						"height": 845,
+						"originX": 0.7088,
+						"originY": 0.5514792899408284,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6381372,
+						"collisionPoly": {
+							"points": [
+								0.12479999999999991,
+								0.3562130177514793,
+								0.7088,
+								0.05798816568047337,
+								0.8576,
+								0.676923076923077,
+								0.8576,
+								0.5514792899408284,
+								0.8576,
+								0.42485207100591715,
+								0.7088,
+								0.919526627218935,
+								0.12479999999999991,
+								0.7455621301775148,
+								0.12479999999999991,
+								0.5514792899408284
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 572438620208885,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

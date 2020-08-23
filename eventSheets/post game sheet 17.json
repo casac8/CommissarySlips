@@ -1,0 +1,280 @@
+{
+	"name": "Post game sheet 17",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 854912665547524
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 503116784364300,
+					"parameters": {
+						"audio-file": "JUSTINAUDIOCOMP2WAV",
+						"loop": "not-looping",
+						"volume": "5",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 320195541885453
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 131169592811322
+				}
+			],
+			"actions": [
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 146184829037500,
+					"parameters": {
+						"tag": "\"BackgroundMusic\"",
+						"db": "-20",
+						"duration": "0.5",
+						"ending": "keep-playing"
+					}
+				}
+			],
+			"sid": 625909538373379
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "JustinText17",
+					"sid": 856732808581355
+				}
+			],
+			"actions": [
+				{
+					"id": "typewriter-text",
+					"objectClass": "JustinText17",
+					"sid": 112181852275143,
+					"parameters": {
+						"text": "\"I usually spend anywhere from $40 to $50 a week just in commissary, and that’s keeping up my hygiene and buying my writing paper and pens and envelopes and stamps. Not to mention, I usually spend anywhere around $30, $35 just on food items...\"\n",
+						"duration": "24.5"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 668084361399839,
+					"parameters": {
+						"seconds": "25"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 881076237584606,
+					"parameters": {
+						"audio-file": "JustinHungryAudioWAV",
+						"loop": "not-looping",
+						"volume": "7",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "typewriter-text",
+					"objectClass": "PG16Text2",
+					"sid": 650794271148445,
+					"parameters": {
+						"text": "\"I know a lot of nights I would’ve gone hungry if I wouldn’t have had a wife who sent me money so I could buy store.\"",
+						"duration": "8"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 811888424188078,
+					"parameters": {
+						"seconds": "12"
+					}
+				},
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 231684096246629,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 183519735431021
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "GoAhead",
+					"sid": 713844962885465
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 457418531384626,
+					"parameters": {
+						"which": "next"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 391673723357812,
+					"parameters": {
+						"tag": "\"\""
+					}
+				}
+			],
+			"sid": 847305178995158
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 907088908129017,
+					"parameters": {
+						"object": "GoAhead"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 378264704253347,
+					"parameters": {
+						"which": "next"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 898832290607630,
+					"parameters": {
+						"tag": "\"\""
+					}
+				}
+			],
+			"sid": 154230704411841
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Back",
+					"sid": 862467422536475
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 874357869934900,
+					"parameters": {
+						"which": "previous"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 114557173118949,
+					"parameters": {
+						"tag": "\"\""
+					}
+				}
+			],
+			"sid": 197747475555802
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 126650655725367,
+					"parameters": {
+						"object": "Back"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 657153207918337,
+					"parameters": {
+						"which": "previous"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 845139496895739,
+					"parameters": {
+						"tag": "\"\""
+					}
+				}
+			],
+			"sid": 810732266279583
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 890964439696030
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 875357707134348,
+					"parameters": {
+						"variable": "SlidevalueDD",
+						"value": "24"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "SlideCounterDD",
+					"sid": 837044786427626,
+					"parameters": {
+						"text": "(str(SlideValueDD))"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "SlidecounterOD",
+					"sid": 788903345794763,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 737132380760183
+		}
+	],
+	"sid": 734568691485660
+}

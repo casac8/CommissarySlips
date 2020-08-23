@@ -1,0 +1,344 @@
+{
+	"name": "Post game sheet 7",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 841532511683415
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 989985582019145,
+					"parameters": {
+						"audio-file": "Justin jobs audioWAV",
+						"loop": "not-looping",
+						"volume": "42",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 209960010168554
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 550803481410110
+				}
+			],
+			"actions": [
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 394496857443008,
+					"parameters": {
+						"tag": "\"BackgroundMusic\"",
+						"db": "-20",
+						"duration": "0.5",
+						"ending": "keep-playing"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 993254126516904,
+					"parameters": {
+						"seconds": "0.75"
+					}
+				},
+				{
+					"id": "typewriter-text",
+					"objectClass": "Securustext",
+					"sid": 342762634832660,
+					"parameters": {
+						"text": "\"Thank you for using Securus. You may start the conversation now.\"",
+						"duration": "4.75"
+					}
+				}
+			],
+			"sid": 785163937497555
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "Justinjobstext",
+					"sid": 256608056138102
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 618173293015013,
+					"parameters": {
+						"seconds": "7.2"
+					}
+				},
+				{
+					"id": "typewriter-text",
+					"objectClass": "Justinjobstext",
+					"sid": 699907263244473,
+					"parameters": {
+						"text": "\"Most of the people in here work for free. You got kitchen workers, you got landscape workers, you got farm workers. Yeah, they all work for free, they don’t get paid nothing.\"\n",
+						"duration": "16"
+					}
+				}
+			],
+			"sid": 996734676742081
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "Justinjobstext",
+					"sid": 920669200477436
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 384415843640446,
+					"parameters": {
+						"seconds": "26"
+					}
+				},
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 819534754081179,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 881792165623022
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "GoAhead",
+					"sid": 799157399097273
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 554060104331011,
+					"parameters": {
+						"which": "next"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 801191516268210,
+					"parameters": {
+						"tag": "\"\""
+					}
+				}
+			],
+			"sid": 931904144847720
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 506674474671399,
+					"parameters": {
+						"object": "GoAhead"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 149802813160539,
+					"parameters": {
+						"which": "next"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 591806237965418,
+					"parameters": {
+						"tag": "\"\""
+					}
+				}
+			],
+			"sid": 261654165101861
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Back",
+					"sid": 390772324861882
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 365287853170216,
+					"parameters": {
+						"which": "previous"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 482143761643113,
+					"parameters": {
+						"tag": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 789854860719890,
+					"parameters": {
+						"seconds": "0.0"
+					}
+				},
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 556087216885377,
+					"parameters": {
+						"tag": "\"BackgroundMusic\"",
+						"db": "0",
+						"duration": "3",
+						"ending": "keep-playing"
+					}
+				},
+				{
+					"id": "set-master-volume",
+					"objectClass": "Audio",
+					"sid": 317231580560345,
+					"parameters": {
+						"db": "0"
+					}
+				}
+			],
+			"sid": 856042486743996
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 504358258387061,
+					"parameters": {
+						"object": "Back"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 396444440939098,
+					"parameters": {
+						"which": "previous"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 779280439105870,
+					"parameters": {
+						"tag": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 867175912543278,
+					"parameters": {
+						"seconds": "0.0"
+					}
+				},
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 915654044030584,
+					"parameters": {
+						"tag": "\"BackgroundMusic\"",
+						"db": "0",
+						"duration": "3",
+						"ending": "keep-playing"
+					}
+				},
+				{
+					"id": "set-master-volume",
+					"objectClass": "Audio",
+					"sid": 431785821843712,
+					"parameters": {
+						"db": "0"
+					}
+				}
+			],
+			"sid": 274091632533186
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 753433452736453
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 847413134997244,
+					"parameters": {
+						"variable": "SlidevalueDD",
+						"value": "14"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "SlideCounterDD",
+					"sid": 991625591849116,
+					"parameters": {
+						"text": "(str(SlideValueDD))"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "SlidecounterOD",
+					"sid": 374336858422984,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 829918246761382
+		}
+	],
+	"sid": 508942483349991
+}

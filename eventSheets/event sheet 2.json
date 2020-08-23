@@ -1,0 +1,208 @@
+{
+	"name": "Event sheet 2",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "SlideValue",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 102961649167014
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "Text1",
+					"sid": 873040889295728
+				}
+			],
+			"actions": [
+				{
+					"id": "typewriter-text",
+					"objectClass": "Text1",
+					"sid": 792701946233780,
+					"parameters": {
+						"text": "\"Your name is Justin Faircloth.\"",
+						"duration": "1.5"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 491516621224299,
+					"parameters": {
+						"seconds": "2.75"
+					}
+				},
+				{
+					"id": "typewriter-text",
+					"objectClass": "Text1a",
+					"sid": 115409190103914,
+					"parameters": {
+						"text": "\"You’re a 34-year-old man incarcerated in Limestone Correctional Facility, a state prison in northern Alabama.\"",
+						"duration": "5"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 791114062138781,
+					"parameters": {
+						"seconds": "5.75"
+					}
+				},
+				{
+					"id": "typewriter-text",
+					"objectClass": "Text1b",
+					"sid": 874019674661507,
+					"parameters": {
+						"text": "\"You have Stage IV colon cancer and are unable to work.\"",
+						"duration": "3"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 479215734368649,
+					"parameters": {
+						"seconds": "6.0"
+					}
+				},
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 810096571194752,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 735446145393335
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "GoAhead",
+					"sid": 501159884286304
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 356588370746334,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 100934655924441
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 985753334022736,
+					"parameters": {
+						"object": "GoAhead"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 215750143253802,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 528770910363856
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Back",
+					"sid": 288311870788809
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 275954845071645,
+					"parameters": {
+						"which": "previous"
+					}
+				}
+			],
+			"sid": 815462902687794
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 263678978972912,
+					"parameters": {
+						"object": "Back"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 412168021739213,
+					"parameters": {
+						"which": "previous"
+					}
+				}
+			],
+			"sid": 452037639124406
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 477885578650703
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 974617378077492,
+					"parameters": {
+						"variable": "SlideValue",
+						"value": "2"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "SlidecounterOD",
+					"sid": 141352624444644,
+					"parameters": {
+						"text": "(str(SlideValue))"
+					}
+				}
+			],
+			"sid": 185009591350687
+		}
+	],
+	"sid": 403445290532286
+}

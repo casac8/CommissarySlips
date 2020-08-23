@@ -1,0 +1,240 @@
+{
+	"name": "End Sheet",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 367593204731103
+				}
+			],
+			"actions": [
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 899797163631126,
+					"parameters": {
+						"tag": "\"BackgroundMusic\"",
+						"db": "0",
+						"duration": "3",
+						"ending": "keep-playing"
+					}
+				},
+				{
+					"id": "set-master-volume",
+					"objectClass": "Audio",
+					"sid": 380207515357937,
+					"parameters": {
+						"db": "0"
+					}
+				},
+				{
+					"id": "append-text",
+					"objectClass": "ENDTextBox",
+					"sid": 537509946008909,
+					"parameters": {
+						"text": "\"This entire project - all reporting, research, programming, illustration, music composition, audio production, etc. - was conceived and executed by Connor Sheets for\""
+					}
+				}
+			],
+			"sid": 605685342732679
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 671707236799450
+				}
+			],
+			"actions": [
+				{
+					"id": "set-css-style",
+					"objectClass": "PlayAgain",
+					"sid": 297901083980777,
+					"parameters": {
+						"property-name": "\"color\"",
+						"value": "\"rgb(231, 243, 68)\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "PlayAgain",
+					"sid": 672805472340216,
+					"parameters": {
+						"property-name": "\"font-size\"",
+						"value": "\"18px\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "PlayAgain",
+					"sid": 555820277965174,
+					"parameters": {
+						"property-name": "\"background-color\"",
+						"value": "\"rgb(50, 50, 50)\""
+					}
+				}
+			],
+			"sid": 530407885935160
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 187966630882937,
+					"parameters": {
+						"object": "PlayAgain"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 605037381938852
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 316098359215114,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 641818743710870,
+					"parameters": {
+						"layout": "Layout 1"
+					}
+				}
+			],
+			"sid": 215171089618384
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "PlayAgain",
+					"sid": 323561597472905
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 793691519432430
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 891043074229386,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 405021408880646,
+					"parameters": {
+						"layout": "Layout 1"
+					}
+				}
+			],
+			"sid": 992521731236341
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Back",
+					"sid": 102435825671386
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 792928941680866,
+					"parameters": {
+						"which": "previous"
+					}
+				}
+			],
+			"sid": 903142471065150
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 301838527104009,
+					"parameters": {
+						"object": "Back"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 648577571961495,
+					"parameters": {
+						"which": "previous"
+					}
+				}
+			],
+			"sid": 236717749220289
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 180927376888591
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 298978826969989,
+					"parameters": {
+						"variable": "SlidevalueDD",
+						"value": "34"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "SlideCounterDD",
+					"sid": 844109281138115,
+					"parameters": {
+						"text": "(str(SlideValueDD))"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "SlidecounterOD",
+					"sid": 999583702085804,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 975321936385106
+		}
+	],
+	"sid": 366660645517834
+}

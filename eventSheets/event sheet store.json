@@ -1,0 +1,2874 @@
+{
+	"name": "Event sheet STORE",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Money",
+			"type": "number",
+			"initialValue": "15.00001",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 672712058756093
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 159666013163144
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 451130490173758,
+					"parameters": {
+						"audio-file": "doorbell",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "ReplayButton",
+					"sid": 557611246928367,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "reset-global-variables",
+					"objectClass": "System",
+					"sid": 578071264205879
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Nextlayout",
+					"sid": 462818349376488,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 243622901672463
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 822625267440176,
+					"parameters": {
+						"variable": "Money",
+						"comparison": 3,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "MoneyText",
+					"sid": 631144384043138,
+					"parameters": {
+						"text": "\"0.00\""
+					}
+				}
+			],
+			"sid": 893790387288764
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 484568030626300,
+					"parameters": {
+						"variable": "Money",
+						"comparison": 2,
+						"value": "10"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "MoneyText",
+					"sid": 630880506045582,
+					"parameters": {
+						"text": "left(str(money * 100), 2) & \".\" & mid(str(money), 1, 2)"
+					}
+				},
+				{
+					"id": "set-width",
+					"objectClass": "MoneyText",
+					"sid": 112240274270692,
+					"parameters": {
+						"width": "148"
+					}
+				}
+			],
+			"sid": 927185539574703
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 944144151403081,
+					"parameters": {
+						"variable": "Money",
+						"comparison": 5,
+						"value": "10"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "MoneyText",
+					"sid": 787597851871151,
+					"parameters": {
+						"text": "left(str(money * 100), 2) & \".\" & mid(str(money), 1, 2)"
+					}
+				},
+				{
+					"id": "set-width",
+					"objectClass": "MoneyText",
+					"sid": 838050745365019,
+					"parameters": {
+						"width": "185"
+					}
+				}
+			],
+			"sid": 308064828765366
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 301475437030794
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"script": "(round(Money * 1000)) / 1000"
+				}
+			],
+			"sid": 595189180560226
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 950453386339200
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "MoneyText",
+					"sid": 883444773198685,
+					"parameters": {
+						"text": "Money"
+					}
+				},
+				{
+					"type": "script",
+					"script": ""
+				}
+			],
+			"sid": 517101208440588
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 271479742439764,
+					"parameters": {
+						"object": "ChewingTobacco"
+					}
+				},
+				{
+					"id": "compare-y",
+					"objectClass": "ChewingTobacco",
+					"sid": 400974083546480,
+					"parameters": {
+						"comparison": 2,
+						"y-co-ordinate": "200"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 876426747342505,
+					"parameters": {
+						"first-value": "Money",
+						"comparison": 5,
+						"second-value": "6.45"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "ChewingTobacco",
+					"sid": 513384804910446,
+					"parameters": {
+						"x": "550",
+						"y": "840"
+					}
+				},
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 243903674630207,
+					"parameters": {
+						"variable": "Money",
+						"value": "6.45"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 407527147568967,
+					"parameters": {
+						"audio-file": "RegisterWAV",
+						"loop": "not-looping",
+						"volume": "-7",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 297401277902669
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 728975216839947,
+					"parameters": {
+						"object": "ChewingTobacco"
+					}
+				},
+				{
+					"id": "compare-y",
+					"objectClass": "ChewingTobacco",
+					"sid": 321433510870175,
+					"parameters": {
+						"comparison": 2,
+						"y-co-ordinate": "200"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 160716431681984,
+					"parameters": {
+						"first-value": "Money",
+						"comparison": 2,
+						"second-value": "6.45"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-font-color",
+					"objectClass": "MoneyText",
+					"sid": 553348380752332,
+					"parameters": {
+						"color": "rgb(255, 0, 0)"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 931277598400537,
+					"parameters": {
+						"audio-file": "Error sound",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 676204796039565,
+					"parameters": {
+						"seconds": "0.3"
+					}
+				},
+				{
+					"id": "set-font-color",
+					"objectClass": "MoneyText",
+					"sid": 261932180200767,
+					"parameters": {
+						"color": "rgb(68, 255, 0)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "MoneyText",
+					"sid": 642752418833215,
+					"parameters": {
+						"text": "\"Money\""
+					}
+				}
+			],
+			"sid": 712163158903972
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 324696678673229,
+					"parameters": {
+						"object": "ChewingTobacco"
+					}
+				},
+				{
+					"id": "compare-y",
+					"objectClass": "ChewingTobacco",
+					"sid": 661296910807186,
+					"parameters": {
+						"comparison": 4,
+						"y-co-ordinate": "200"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "ChewingTobacco",
+					"sid": 226144548256702,
+					"parameters": {
+						"x": "1404.814353",
+						"y": "111.696895"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 730676734414014,
+					"parameters": {
+						"variable": "Money",
+						"value": "6.45"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 679927629173448,
+					"parameters": {
+						"audio-file": "RegisterWAV",
+						"loop": "not-looping",
+						"volume": "-7",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 276738500585770
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 913011804167670,
+					"parameters": {
+						"object": "ChipsDone"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 970964915794142,
+					"parameters": {
+						"first-value": "Money",
+						"comparison": 5,
+						"second-value": "0.35"
+					}
+				},
+				{
+					"id": "compare-y",
+					"objectClass": "ChipsDone",
+					"sid": 885843306801758,
+					"parameters": {
+						"comparison": 2,
+						"y-co-ordinate": "688"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "ChipsDone",
+					"sid": 544973783816402,
+					"parameters": {
+						"x": "1070",
+						"y": "850"
+					}
+				},
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 730793728774988,
+					"parameters": {
+						"variable": "Money",
+						"value": "0.35"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 343847662766146,
+					"parameters": {
+						"audio-file": "RegisterWAV",
+						"loop": "not-looping",
+						"volume": "-7",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 865074288081891
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 124758021906665,
+					"parameters": {
+						"object": "ChipsDone"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 220899933734833,
+					"parameters": {
+						"first-value": "Money",
+						"comparison": 2,
+						"second-value": "0.35"
+					}
+				},
+				{
+					"id": "compare-y",
+					"objectClass": "ChipsDone",
+					"sid": 426179609828415,
+					"parameters": {
+						"comparison": 2,
+						"y-co-ordinate": "688"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-font-color",
+					"objectClass": "MoneyText",
+					"sid": 744248292076253,
+					"parameters": {
+						"color": "rgb(255, 0, 0)"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 869598999538396,
+					"parameters": {
+						"audio-file": "Error sound",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 988858920907341,
+					"parameters": {
+						"seconds": "0.3"
+					}
+				},
+				{
+					"id": "set-font-color",
+					"objectClass": "MoneyText",
+					"sid": 986459033863544,
+					"parameters": {
+						"color": "rgb(68, 255, 0)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "MoneyText",
+					"sid": 367890797833686,
+					"parameters": {
+						"text": "\"Money\""
+					}
+				}
+			],
+			"sid": 466661732873574
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 189241728769597,
+					"parameters": {
+						"object": "ChipsDone"
+					}
+				},
+				{
+					"id": "compare-y",
+					"objectClass": "ChipsDone",
+					"sid": 235175885599229,
+					"parameters": {
+						"comparison": 4,
+						"y-co-ordinate": "688"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "ChipsDone",
+					"sid": 253469048114957,
+					"parameters": {
+						"x": "1258.497964",
+						"y": "251.589941"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 212561657710823,
+					"parameters": {
+						"variable": "Money",
+						"value": "0.35"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 878381012223200,
+					"parameters": {
+						"audio-file": "RegisterWAV",
+						"loop": "not-looping",
+						"volume": "-7",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 177782445797599
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 987627981934330,
+					"parameters": {
+						"object": "Cigarettes"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 667259883915209,
+					"parameters": {
+						"first-value": "Money",
+						"comparison": 5,
+						"second-value": "11.04"
+					}
+				},
+				{
+					"id": "compare-y",
+					"objectClass": "Cigarettes",
+					"sid": 548374759611300,
+					"parameters": {
+						"comparison": 2,
+						"y-co-ordinate": "688"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Cigarettes",
+					"sid": 190345017488835,
+					"parameters": {
+						"x": "829",
+						"y": "690"
+					}
+				},
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 147629850494937,
+					"parameters": {
+						"variable": "Money",
+						"value": "11.04"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 648925097399537,
+					"parameters": {
+						"audio-file": "RegisterWAV",
+						"loop": "not-looping",
+						"volume": "-7",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 983851921695050
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 224001876282652,
+					"parameters": {
+						"object": "Cigarettes"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 607094816697666,
+					"parameters": {
+						"first-value": "Money",
+						"comparison": 2,
+						"second-value": "11.04"
+					}
+				},
+				{
+					"id": "compare-y",
+					"objectClass": "Cigarettes",
+					"sid": 152362665710556,
+					"parameters": {
+						"comparison": 2,
+						"y-co-ordinate": "688"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-font-color",
+					"objectClass": "MoneyText",
+					"sid": 349937893418129,
+					"parameters": {
+						"color": "rgb(255, 0, 0)"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 226120287786919,
+					"parameters": {
+						"audio-file": "Error sound",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 620473452116316,
+					"parameters": {
+						"seconds": "0.3"
+					}
+				},
+				{
+					"id": "set-font-color",
+					"objectClass": "MoneyText",
+					"sid": 856970412846858,
+					"parameters": {
+						"color": "rgb(68, 255, 0)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "MoneyText",
+					"sid": 381239442789161,
+					"parameters": {
+						"text": "\"Money\""
+					}
+				}
+			],
+			"sid": 346507739331195
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 170647945499197,
+					"parameters": {
+						"object": "Cigarettes"
+					}
+				},
+				{
+					"id": "compare-y",
+					"objectClass": "Cigarettes",
+					"sid": 242654382630172,
+					"parameters": {
+						"comparison": 4,
+						"y-co-ordinate": "688"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Cigarettes",
+					"sid": 555699142677448,
+					"parameters": {
+						"x": "1474.756786",
+						"y": "271.932933"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 248683967777588,
+					"parameters": {
+						"variable": "Money",
+						"value": "11.04"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 580039568397566,
+					"parameters": {
+						"audio-file": "RegisterWAV",
+						"loop": "not-looping",
+						"volume": "-7",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 981182902571293
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 758851074442494,
+					"parameters": {
+						"object": "Faygo"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 813596944826503,
+					"parameters": {
+						"first-value": "Money",
+						"comparison": 5,
+						"second-value": "0.65"
+					}
+				},
+				{
+					"id": "compare-y",
+					"objectClass": "Faygo",
+					"sid": 504286543335987,
+					"parameters": {
+						"comparison": 2,
+						"y-co-ordinate": "688"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Faygo",
+					"sid": 964384070744252,
+					"parameters": {
+						"x": "1320",
+						"y": "820"
+					}
+				},
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 721523506235667,
+					"parameters": {
+						"variable": "Money",
+						"value": "0.65"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 665069419259443,
+					"parameters": {
+						"audio-file": "RegisterWAV",
+						"loop": "not-looping",
+						"volume": "-7",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 609284011816654
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 369916395243791,
+					"parameters": {
+						"object": "Faygo"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 156986208266545,
+					"parameters": {
+						"first-value": "Money",
+						"comparison": 2,
+						"second-value": "0.65"
+					}
+				},
+				{
+					"id": "compare-y",
+					"objectClass": "Faygo",
+					"sid": 919728514588108,
+					"parameters": {
+						"comparison": 2,
+						"y-co-ordinate": "688"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-font-color",
+					"objectClass": "MoneyText",
+					"sid": 374542600332848,
+					"parameters": {
+						"color": "rgb(255, 0, 0)"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 466101601345578,
+					"parameters": {
+						"audio-file": "Error sound",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 897569959181084,
+					"parameters": {
+						"seconds": "0.3"
+					}
+				},
+				{
+					"id": "set-font-color",
+					"objectClass": "MoneyText",
+					"sid": 517150799712695,
+					"parameters": {
+						"color": "rgb(68, 255, 0)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "MoneyText",
+					"sid": 663980634320940,
+					"parameters": {
+						"text": "\"Money\""
+					}
+				}
+			],
+			"sid": 779818240397653
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 967484707062353,
+					"parameters": {
+						"object": "Faygo"
+					}
+				},
+				{
+					"id": "compare-y",
+					"objectClass": "Faygo",
+					"sid": 181793957308419,
+					"parameters": {
+						"comparison": 4,
+						"y-co-ordinate": "688"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Faygo",
+					"sid": 995493919910503,
+					"parameters": {
+						"x": "1096",
+						"y": "432"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 358355984647263,
+					"parameters": {
+						"variable": "Money",
+						"value": "0.65"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 246640171254440,
+					"parameters": {
+						"audio-file": "RegisterWAV",
+						"loop": "not-looping",
+						"volume": "-7",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 845180029266159
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 107212715137365,
+					"parameters": {
+						"object": "HoneyBun"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 357321162109916,
+					"parameters": {
+						"first-value": "Money",
+						"comparison": 5,
+						"second-value": "1.04"
+					}
+				},
+				{
+					"id": "compare-y",
+					"objectClass": "HoneyBun",
+					"sid": 568533503834832,
+					"parameters": {
+						"comparison": 2,
+						"y-co-ordinate": "688"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "HoneyBun",
+					"sid": 226541660067777,
+					"parameters": {
+						"x": "1199",
+						"y": "850"
+					}
+				},
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 769434544261817,
+					"parameters": {
+						"variable": "Money",
+						"value": "1.04"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 666010955733662,
+					"parameters": {
+						"audio-file": "RegisterWAV",
+						"loop": "not-looping",
+						"volume": "-7",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 132451882216071
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 235530523788099,
+					"parameters": {
+						"object": "HoneyBun"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 586699410595650,
+					"parameters": {
+						"first-value": "Money",
+						"comparison": 2,
+						"second-value": "1.04"
+					}
+				},
+				{
+					"id": "compare-y",
+					"objectClass": "HoneyBun",
+					"sid": 373822571038439,
+					"parameters": {
+						"comparison": 2,
+						"y-co-ordinate": "688"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-font-color",
+					"objectClass": "MoneyText",
+					"sid": 950161897161386,
+					"parameters": {
+						"color": "rgb(255, 0, 0)"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 756723281050615,
+					"parameters": {
+						"audio-file": "Error sound",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 390905148513571,
+					"parameters": {
+						"seconds": "0.3"
+					}
+				},
+				{
+					"id": "set-font-color",
+					"objectClass": "MoneyText",
+					"sid": 417248280795712,
+					"parameters": {
+						"color": "rgb(68, 255, 0)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "MoneyText",
+					"sid": 907101956808695,
+					"parameters": {
+						"text": "\"Money\""
+					}
+				}
+			],
+			"sid": 369362919251922
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 192355647638148,
+					"parameters": {
+						"object": "HoneyBun"
+					}
+				},
+				{
+					"id": "compare-y",
+					"objectClass": "HoneyBun",
+					"sid": 570724299897586,
+					"parameters": {
+						"comparison": 4,
+						"y-co-ordinate": "688"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "HoneyBun",
+					"sid": 120633067277412,
+					"parameters": {
+						"x": "1094.091121",
+						"y": "252.041498"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 275734695206626,
+					"parameters": {
+						"variable": "Money",
+						"value": "1.04"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 622793195403283,
+					"parameters": {
+						"audio-file": "RegisterWAV",
+						"loop": "not-looping",
+						"volume": "-7",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 884810492519518
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 338624552661399,
+					"parameters": {
+						"object": "ProteinBar"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 598643883425466,
+					"parameters": {
+						"first-value": "Money",
+						"comparison": 5,
+						"second-value": "2.42"
+					}
+				},
+				{
+					"id": "compare-y",
+					"objectClass": "ProteinBar",
+					"sid": 182488316653043,
+					"parameters": {
+						"comparison": 2,
+						"y-co-ordinate": "688"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "ProteinBar",
+					"sid": 951618494924101,
+					"parameters": {
+						"x": "1140",
+						"y": "735"
+					}
+				},
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 793753478907156,
+					"parameters": {
+						"variable": "Money",
+						"value": "2.42"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 267305018539831,
+					"parameters": {
+						"audio-file": "RegisterWAV",
+						"loop": "not-looping",
+						"volume": "-7",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 720412020586752
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 603630875623692,
+					"parameters": {
+						"object": "ProteinBar"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 713561729749201,
+					"parameters": {
+						"first-value": "Money",
+						"comparison": 2,
+						"second-value": "2.42"
+					}
+				},
+				{
+					"id": "compare-y",
+					"objectClass": "ProteinBar",
+					"sid": 705988485685031,
+					"parameters": {
+						"comparison": 2,
+						"y-co-ordinate": "688"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-font-color",
+					"objectClass": "MoneyText",
+					"sid": 435009058424255,
+					"parameters": {
+						"color": "rgb(255, 0, 0)"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 980247825295477,
+					"parameters": {
+						"audio-file": "Error sound",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 386421007885890,
+					"parameters": {
+						"seconds": "0.3"
+					}
+				},
+				{
+					"id": "set-font-color",
+					"objectClass": "MoneyText",
+					"sid": 149776882327093,
+					"parameters": {
+						"color": "rgb(68, 255, 0)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "MoneyText",
+					"sid": 534082493898883,
+					"parameters": {
+						"text": "\"Money\""
+					}
+				}
+			],
+			"sid": 735283406825844
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 155055997902679,
+					"parameters": {
+						"object": "ProteinBar"
+					}
+				},
+				{
+					"id": "compare-y",
+					"objectClass": "ProteinBar",
+					"sid": 620871287193296,
+					"parameters": {
+						"comparison": 4,
+						"y-co-ordinate": "688"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "ProteinBar",
+					"sid": 604705994283167,
+					"parameters": {
+						"x": "1154",
+						"y": "110"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 285156273962877,
+					"parameters": {
+						"variable": "Money",
+						"value": "2.42"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 709908938995373,
+					"parameters": {
+						"audio-file": "RegisterWAV",
+						"loop": "not-looping",
+						"volume": "-7",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 803591989058883
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 355062655302984,
+					"parameters": {
+						"object": "Fixodent"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 682900784985973,
+					"parameters": {
+						"first-value": "Money",
+						"comparison": 5,
+						"second-value": "5.41"
+					}
+				},
+				{
+					"id": "compare-y",
+					"objectClass": "Fixodent",
+					"sid": 755572527137609,
+					"parameters": {
+						"comparison": 2,
+						"y-co-ordinate": "688"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Fixodent",
+					"sid": 602319530986065,
+					"parameters": {
+						"x": "241",
+						"y": "891"
+					}
+				},
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 471771964274698,
+					"parameters": {
+						"variable": "Money",
+						"value": "5.41"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 293974867947818,
+					"parameters": {
+						"audio-file": "RegisterWAV",
+						"loop": "not-looping",
+						"volume": "-7",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 888630334926809
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 768046404110539,
+					"parameters": {
+						"object": "Fixodent"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 517529583527151,
+					"parameters": {
+						"first-value": "Money",
+						"comparison": 2,
+						"second-value": "5.41"
+					}
+				},
+				{
+					"id": "compare-y",
+					"objectClass": "Fixodent",
+					"sid": 199113185384285,
+					"parameters": {
+						"comparison": 2,
+						"y-co-ordinate": "688"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-font-color",
+					"objectClass": "MoneyText",
+					"sid": 718979979661170,
+					"parameters": {
+						"color": "rgb(255, 0, 0)"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 931306114898993,
+					"parameters": {
+						"audio-file": "Error sound",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 716716198519610,
+					"parameters": {
+						"seconds": "0.3"
+					}
+				},
+				{
+					"id": "set-font-color",
+					"objectClass": "MoneyText",
+					"sid": 393555235089823,
+					"parameters": {
+						"color": "rgb(68, 255, 0)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "MoneyText",
+					"sid": 928158200553253,
+					"parameters": {
+						"text": "\"Money\""
+					}
+				}
+			],
+			"sid": 798046321595555
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 659965819476702,
+					"parameters": {
+						"object": "Fixodent"
+					}
+				},
+				{
+					"id": "compare-y",
+					"objectClass": "Fixodent",
+					"sid": 928349318977626,
+					"parameters": {
+						"comparison": 4,
+						"y-co-ordinate": "688"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Fixodent",
+					"sid": 247230042464789,
+					"parameters": {
+						"x": "1376.875144",
+						"y": "657.288129"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 931281732468334,
+					"parameters": {
+						"variable": "Money",
+						"value": "5.41"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 145161119905365,
+					"parameters": {
+						"audio-file": "RegisterWAV",
+						"loop": "not-looping",
+						"volume": "-7",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 583562397849644
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 389525349322940,
+					"parameters": {
+						"object": "Toothbrush"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 161102847999259,
+					"parameters": {
+						"first-value": "Money",
+						"comparison": 5,
+						"second-value": "1.05"
+					}
+				},
+				{
+					"id": "compare-y",
+					"objectClass": "Toothbrush",
+					"sid": 868743273952231,
+					"parameters": {
+						"comparison": 2,
+						"y-co-ordinate": "688"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Toothbrush",
+					"sid": 583202672954614,
+					"parameters": {
+						"x": "427",
+						"y": "820"
+					}
+				},
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 223761239357553,
+					"parameters": {
+						"variable": "Money",
+						"value": "1.05"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 129057935206957,
+					"parameters": {
+						"audio-file": "RegisterWAV",
+						"loop": "not-looping",
+						"volume": "-7",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 322929408079479
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 886369423644706,
+					"parameters": {
+						"object": "Toothbrush"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 929184186794263,
+					"parameters": {
+						"first-value": "Money",
+						"comparison": 2,
+						"second-value": "1.05"
+					}
+				},
+				{
+					"id": "compare-y",
+					"objectClass": "Toothbrush",
+					"sid": 705722046074101,
+					"parameters": {
+						"comparison": 2,
+						"y-co-ordinate": "688"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-font-color",
+					"objectClass": "MoneyText",
+					"sid": 361330723757279,
+					"parameters": {
+						"color": "rgb(255, 0, 0)"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 458585125923196,
+					"parameters": {
+						"audio-file": "Error sound",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 186440727347234,
+					"parameters": {
+						"seconds": "0.3"
+					}
+				},
+				{
+					"id": "set-font-color",
+					"objectClass": "MoneyText",
+					"sid": 556524993989449,
+					"parameters": {
+						"color": "rgb(68, 255, 0)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "MoneyText",
+					"sid": 799502055969773,
+					"parameters": {
+						"text": "\"Money\""
+					}
+				}
+			],
+			"sid": 991564294241836
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 193714685785416,
+					"parameters": {
+						"object": "Toothbrush"
+					}
+				},
+				{
+					"id": "compare-y",
+					"objectClass": "Toothbrush",
+					"sid": 332726260470715,
+					"parameters": {
+						"comparison": 4,
+						"y-co-ordinate": "688"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Toothbrush",
+					"sid": 296499542900617,
+					"parameters": {
+						"x": "1485.017302",
+						"y": "428.317863"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 374649527934440,
+					"parameters": {
+						"variable": "Money",
+						"value": "1.05"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 369850313933632,
+					"parameters": {
+						"audio-file": "RegisterWAV",
+						"loop": "not-looping",
+						"volume": "-7",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 611757238307594
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 430449011299539,
+					"parameters": {
+						"object": "Toothpaste"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 808542282883244,
+					"parameters": {
+						"first-value": "Money",
+						"comparison": 5,
+						"second-value": "1.75"
+					}
+				},
+				{
+					"id": "compare-y",
+					"objectClass": "Toothpaste",
+					"sid": 884580318835310,
+					"parameters": {
+						"comparison": 2,
+						"y-co-ordinate": "688"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Toothpaste",
+					"sid": 739117848572048,
+					"parameters": {
+						"x": "1496",
+						"y": "878"
+					}
+				},
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 326157797172564,
+					"parameters": {
+						"variable": "Money",
+						"value": "1.75"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 535664316153480,
+					"parameters": {
+						"audio-file": "RegisterWAV",
+						"loop": "not-looping",
+						"volume": "-7",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 409858642162420
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 234976174082194,
+					"parameters": {
+						"object": "Toothpaste"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 243559135907844,
+					"parameters": {
+						"first-value": "Money",
+						"comparison": 2,
+						"second-value": "1.75"
+					}
+				},
+				{
+					"id": "compare-y",
+					"objectClass": "Toothpaste",
+					"sid": 363762776488695,
+					"parameters": {
+						"comparison": 2,
+						"y-co-ordinate": "688"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-font-color",
+					"objectClass": "MoneyText",
+					"sid": 836248430362291,
+					"parameters": {
+						"color": "rgb(255, 0, 0)"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 775213889322448,
+					"parameters": {
+						"audio-file": "Error sound",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 403484511552520,
+					"parameters": {
+						"seconds": "0.3"
+					}
+				},
+				{
+					"id": "set-font-color",
+					"objectClass": "MoneyText",
+					"sid": 391011330606308,
+					"parameters": {
+						"color": "rgb(68, 255, 0)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "MoneyText",
+					"sid": 763170153678082,
+					"parameters": {
+						"text": "\"Money\""
+					}
+				}
+			],
+			"sid": 100116014903329
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 252652049964586,
+					"parameters": {
+						"object": "Toothpaste"
+					}
+				},
+				{
+					"id": "compare-y",
+					"objectClass": "Toothpaste",
+					"sid": 776854592720445,
+					"parameters": {
+						"comparison": 4,
+						"y-co-ordinate": "688"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Toothpaste",
+					"sid": 372716902043759,
+					"parameters": {
+						"x": "1132.873233",
+						"y": "636.814862"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 206774578786827,
+					"parameters": {
+						"variable": "Money",
+						"value": "1.75"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 882468322330689,
+					"parameters": {
+						"audio-file": "RegisterWAV",
+						"loop": "not-looping",
+						"volume": "-7",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 201311483410001
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 510479994322468,
+					"parameters": {
+						"object": "Vaseline"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 923434545849776,
+					"parameters": {
+						"first-value": "Money",
+						"comparison": 5,
+						"second-value": "3.27"
+					}
+				},
+				{
+					"id": "compare-y",
+					"objectClass": "Vaseline",
+					"sid": 453057862237345,
+					"parameters": {
+						"comparison": 2,
+						"y-co-ordinate": "688"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Vaseline",
+					"sid": 192046526896443,
+					"parameters": {
+						"x": "1484",
+						"y": "765"
+					}
+				},
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 992512626376295,
+					"parameters": {
+						"variable": "Money",
+						"value": "3.27"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 666986019622620,
+					"parameters": {
+						"audio-file": "RegisterWAV",
+						"loop": "not-looping",
+						"volume": "-7",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 583324780267815
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 144608158212605,
+					"parameters": {
+						"object": "Vaseline"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 999466464039193,
+					"parameters": {
+						"first-value": "Money",
+						"comparison": 2,
+						"second-value": "3.27"
+					}
+				},
+				{
+					"id": "compare-y",
+					"objectClass": "Vaseline",
+					"sid": 475593787612030,
+					"parameters": {
+						"comparison": 2,
+						"y-co-ordinate": "688"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-font-color",
+					"objectClass": "MoneyText",
+					"sid": 775383257322599,
+					"parameters": {
+						"color": "rgb(255, 0, 0)"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 464653353957184,
+					"parameters": {
+						"audio-file": "Error sound",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 816281642370756,
+					"parameters": {
+						"seconds": "0.3"
+					}
+				},
+				{
+					"id": "set-font-color",
+					"objectClass": "MoneyText",
+					"sid": 477156638183380,
+					"parameters": {
+						"color": "rgb(68, 255, 0)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "MoneyText",
+					"sid": 940962727377496,
+					"parameters": {
+						"text": "\"Money\""
+					}
+				}
+			],
+			"sid": 581836223033234
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 160181436328308,
+					"parameters": {
+						"object": "Vaseline"
+					}
+				},
+				{
+					"id": "compare-y",
+					"objectClass": "Vaseline",
+					"sid": 318249259179526,
+					"parameters": {
+						"comparison": 4,
+						"y-co-ordinate": "688"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Vaseline",
+					"sid": 868973919193327,
+					"parameters": {
+						"x": "417.75701",
+						"y": "197.022419"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 476470750589083,
+					"parameters": {
+						"variable": "Money",
+						"value": "3.27"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 519879654188599,
+					"parameters": {
+						"audio-file": "RegisterWAV",
+						"loop": "not-looping",
+						"volume": "-7",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 327798031070483
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 347620470690629,
+					"parameters": {
+						"object": "Shorts"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 865532192714651,
+					"parameters": {
+						"first-value": "Money",
+						"comparison": 5,
+						"second-value": "13.04"
+					}
+				},
+				{
+					"id": "compare-y",
+					"objectClass": "Shorts",
+					"sid": 261097672131168,
+					"parameters": {
+						"comparison": 2,
+						"y-co-ordinate": "688"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Shorts",
+					"sid": 292470595756132,
+					"parameters": {
+						"x": "785",
+						"y": "822"
+					}
+				},
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 752762562475847,
+					"parameters": {
+						"variable": "Money",
+						"value": "13.04"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 237870093938420,
+					"parameters": {
+						"audio-file": "RegisterWAV",
+						"loop": "not-looping",
+						"volume": "-7",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 259430299337865
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 957747166530341,
+					"parameters": {
+						"object": "Shorts"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 415336218823901,
+					"parameters": {
+						"first-value": "Money",
+						"comparison": 2,
+						"second-value": "13.04"
+					}
+				},
+				{
+					"id": "compare-y",
+					"objectClass": "Shorts",
+					"sid": 830596820790471,
+					"parameters": {
+						"comparison": 2,
+						"y-co-ordinate": "688"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-font-color",
+					"objectClass": "MoneyText",
+					"sid": 340689489913758,
+					"parameters": {
+						"color": "rgb(255, 0, 0)"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 357943800398441,
+					"parameters": {
+						"audio-file": "Error sound",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 738287876196438,
+					"parameters": {
+						"seconds": "0.3"
+					}
+				},
+				{
+					"id": "set-font-color",
+					"objectClass": "MoneyText",
+					"sid": 434175871844381,
+					"parameters": {
+						"color": "rgb(68, 255, 0)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "MoneyText",
+					"sid": 212118878222414,
+					"parameters": {
+						"text": "\"Money\""
+					}
+				}
+			],
+			"sid": 904414733081372
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 144979533940278,
+					"parameters": {
+						"object": "Shorts"
+					}
+				},
+				{
+					"id": "compare-y",
+					"objectClass": "Shorts",
+					"sid": 612294490913259,
+					"parameters": {
+						"comparison": 4,
+						"y-co-ordinate": "688"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Shorts",
+					"sid": 296823004367182,
+					"parameters": {
+						"x": "1315.83295",
+						"y": "422.361241"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 920701670972670,
+					"parameters": {
+						"variable": "Money",
+						"value": "13.04"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 778645706313080,
+					"parameters": {
+						"audio-file": "RegisterWAV",
+						"loop": "not-looping",
+						"volume": "-7",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 133170690433538
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 640992667716170,
+					"parameters": {
+						"object": "Cereal"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 191827984766610,
+					"parameters": {
+						"first-value": "Money",
+						"comparison": 5,
+						"second-value": "6.83"
+					}
+				},
+				{
+					"id": "compare-y",
+					"objectClass": "Cereal",
+					"sid": 228031362926808,
+					"parameters": {
+						"comparison": 2,
+						"y-co-ordinate": "688"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Cereal",
+					"sid": 879657925620525,
+					"parameters": {
+						"x": "544",
+						"y": "700"
+					}
+				},
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 566228247388801,
+					"parameters": {
+						"variable": "Money",
+						"value": "6.83"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 107485182591976,
+					"parameters": {
+						"audio-file": "RegisterWAV",
+						"loop": "not-looping",
+						"volume": "-7",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 845553527724119
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 580088322893372,
+					"parameters": {
+						"object": "Cereal"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 999753208286474,
+					"parameters": {
+						"first-value": "Money",
+						"comparison": 2,
+						"second-value": "6.83"
+					}
+				},
+				{
+					"id": "compare-y",
+					"objectClass": "Cereal",
+					"sid": 807938533884968,
+					"parameters": {
+						"comparison": 2,
+						"y-co-ordinate": "688"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-font-color",
+					"objectClass": "MoneyText",
+					"sid": 577288317028505,
+					"parameters": {
+						"color": "rgb(255, 0, 0)"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 735175633046746,
+					"parameters": {
+						"audio-file": "Error sound",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 632763993876281,
+					"parameters": {
+						"seconds": "0.3"
+					}
+				},
+				{
+					"id": "set-font-color",
+					"objectClass": "MoneyText",
+					"sid": 796488263204217,
+					"parameters": {
+						"color": "rgb(68, 255, 0)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "MoneyText",
+					"sid": 550754227351109,
+					"parameters": {
+						"text": "\"Money\""
+					}
+				}
+			],
+			"sid": 509138772389519
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 305163461054485,
+					"parameters": {
+						"object": "Cereal"
+					}
+				},
+				{
+					"id": "compare-y",
+					"objectClass": "Cereal",
+					"sid": 716422102404697,
+					"parameters": {
+						"comparison": 4,
+						"y-co-ordinate": "688"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Cereal",
+					"sid": 105349472330962,
+					"parameters": {
+						"x": "636",
+						"y": "200"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 378670587922262,
+					"parameters": {
+						"variable": "Money",
+						"value": "6.83"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 771007758804721,
+					"parameters": {
+						"audio-file": "RegisterWAV",
+						"loop": "not-looping",
+						"volume": "-7",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 906020627916799
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 634881113129826,
+					"parameters": {
+						"object": "Advil"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 951161001404027,
+					"parameters": {
+						"first-value": "Money",
+						"comparison": 5,
+						"second-value": "1.49"
+					}
+				},
+				{
+					"id": "compare-y",
+					"objectClass": "Advil",
+					"sid": 280854253108769,
+					"parameters": {
+						"comparison": 2,
+						"y-co-ordinate": "688"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Advil",
+					"sid": 781192518714975,
+					"parameters": {
+						"x": "977",
+						"y": "824"
+					}
+				},
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 795344119875443,
+					"parameters": {
+						"variable": "Money",
+						"value": "1.49"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 544791539935182,
+					"parameters": {
+						"audio-file": "RegisterWAV",
+						"loop": "not-looping",
+						"volume": "-7",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 123162786908004
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 475308882816855,
+					"parameters": {
+						"object": "Advil"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 255265499271550,
+					"parameters": {
+						"first-value": "Money",
+						"comparison": 2,
+						"second-value": "1.49"
+					}
+				},
+				{
+					"id": "compare-y",
+					"objectClass": "Advil",
+					"sid": 539585216035175,
+					"parameters": {
+						"comparison": 2,
+						"y-co-ordinate": "688"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-font-color",
+					"objectClass": "MoneyText",
+					"sid": 849308916989564,
+					"parameters": {
+						"color": "rgb(255, 0, 0)"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 618909154824445,
+					"parameters": {
+						"audio-file": "Error sound",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 433367592652026,
+					"parameters": {
+						"seconds": "0.3"
+					}
+				},
+				{
+					"id": "set-font-color",
+					"objectClass": "MoneyText",
+					"sid": 376041059642213,
+					"parameters": {
+						"color": "rgb(68, 255, 0)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "MoneyText",
+					"sid": 956525088975295,
+					"parameters": {
+						"text": "\"Money\""
+					}
+				}
+			],
+			"sid": 216430395721593
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 714665856670428,
+					"parameters": {
+						"object": "Advil"
+					}
+				},
+				{
+					"id": "compare-y",
+					"objectClass": "Advil",
+					"sid": 547372014787730,
+					"parameters": {
+						"comparison": 4,
+						"y-co-ordinate": "688"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Advil",
+					"sid": 950735019619045,
+					"parameters": {
+						"x": "243",
+						"y": "202"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 924032056368545,
+					"parameters": {
+						"variable": "Money",
+						"value": "1.49"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 700138237249429,
+					"parameters": {
+						"audio-file": "RegisterWAV",
+						"loop": "not-looping",
+						"volume": "-7",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 134724463628593
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 220254542083815,
+					"parameters": {
+						"object": "ReplayButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 432787759178613
+				}
+			],
+			"sid": 939210893408471
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "ReplayButton",
+					"sid": 339057506273043
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 281044680236603
+				}
+			],
+			"sid": 331212496247860
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 167781342467133,
+					"parameters": {
+						"object": "Nextlayout"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 616812461634742,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 984686238070483
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Nextlayout",
+					"sid": 541131808910945
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 840954214352428,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 488909970111698
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Back",
+					"sid": 877604111707976
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 997714045850294,
+					"parameters": {
+						"which": "previous"
+					}
+				}
+			],
+			"sid": 166759559165232
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 630790184289826,
+					"parameters": {
+						"object": "Back"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 353657182018705,
+					"parameters": {
+						"which": "previous"
+					}
+				}
+			],
+			"sid": 161666412428838
+		}
+	],
+	"sid": 985594797848024
+}

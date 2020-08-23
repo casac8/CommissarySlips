@@ -1,0 +1,35 @@
+{
+	"name": "Event sheet 0",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 685363828682830
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 194659372382734,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 644345874118448,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 727294362525902
+		}
+	],
+	"sid": 673175605358056
+}

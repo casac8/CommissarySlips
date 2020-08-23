@@ -1,0 +1,57 @@
+{
+	"name": "Cereal",
+	"plugin-id": "Sprite",
+	"sid": 915279549806617,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 211,
+						"height": 241,
+						"originX": 0.2037914691943128,
+						"originY": 0.6058091286307054,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 237688,
+						"collisionPoly": {
+							"points": [
+								0.009478672985781991,
+								0.7468879668049793,
+								0.2037914691943128,
+								0.012448132780082987,
+								0.9763033175355448,
+								0.23651452282157676,
+								0.981042654028436,
+								0.6058091286307054,
+								0.981042654028436,
+								0.975103734439834,
+								0.2037914691943128,
+								0.983402489626556,
+								0.004739336492890996,
+								0.46473029045643155,
+								0.004739336492890996,
+								0.6058091286307054
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 115236996206769,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

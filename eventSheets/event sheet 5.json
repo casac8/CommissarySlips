@@ -1,0 +1,198 @@
+{
+	"name": "Event sheet 5",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 517245315979169
+				}
+			],
+			"actions": [
+				{
+					"id": "typewriter-text",
+					"objectClass": "Text6",
+					"sid": 253588943582722,
+					"parameters": {
+						"text": "\"Click the items you want and you’ll pay their actual prices. Run out of funds and you're done shopping.\"\n",
+						"duration": "4.5"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 385112390544169,
+					"parameters": {
+						"seconds": "5.5"
+					}
+				},
+				{
+					"id": "typewriter-text",
+					"objectClass": "Text6a",
+					"sid": 161708931801264,
+					"parameters": {
+						"text": "\"You’ll quickly find that money doesn’t go very far at the commissary.\"",
+						"duration": "3"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 927726457459557,
+					"parameters": {
+						"seconds": "4"
+					}
+				},
+				{
+					"id": "typewriter-text",
+					"objectClass": "Text6b",
+					"sid": 474412481735535,
+					"parameters": {
+						"text": "\"Good luck.\"",
+						"duration": "0.75"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 479326448420375,
+					"parameters": {
+						"seconds": "4"
+					}
+				},
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 604752025412526,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 365183778564466
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "GoAhead",
+					"sid": 317418518986890
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 481145477990369,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 901658508001637
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 954458881288409,
+					"parameters": {
+						"object": "GoAhead"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 349659874192358,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 662013410609215
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Back",
+					"sid": 304480125749758
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 974889720603341,
+					"parameters": {
+						"which": "previous"
+					}
+				}
+			],
+			"sid": 159721077994993
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 703568465183138,
+					"parameters": {
+						"object": "Back"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 307828298872917,
+					"parameters": {
+						"which": "previous"
+					}
+				}
+			],
+			"sid": 594792708945587
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 466032547127558
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 225134622526711,
+					"parameters": {
+						"variable": "SlideValue",
+						"value": "5"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "SlidecounterOD",
+					"sid": 310458340335212,
+					"parameters": {
+						"text": "(str(SlideValue))"
+					}
+				}
+			],
+			"sid": 809150394388129
+		}
+	],
+	"sid": 842610497323382
+}
